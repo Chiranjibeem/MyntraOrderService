@@ -5,6 +5,7 @@ import com.myntra.order.service.PaymentRegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
@@ -15,7 +16,7 @@ public class PaymentRegistryController {
     @Autowired
     PaymentRegistryService service;
 
-    @RequestMapping(value = "/createPayment/{paymentType}/{amount}")
+    @RequestMapping(value = "/createPayment/{paymentType}/{amount}",method = RequestMethod.GET)
     public Payment createPayment(@PathVariable(name = "paymentType") String type,
                                  @PathVariable(name = "amount") BigDecimal amount) {
         return service.fetchPaymentType(type);

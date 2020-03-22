@@ -5,6 +5,7 @@ import com.myntra.order.service.ItemRegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,7 +14,7 @@ public class ItemRegistryController {
     @Autowired
     private ItemRegistryService service;
 
-    @RequestMapping(value = "addItem/{itemId}")
+    @RequestMapping(value = "addItem/{itemId}",method = RequestMethod.GET)
     public Item getItems(@PathVariable(name = "itemId") String itemId) throws Exception {
         return service.fetchItemById(itemId);
     }
