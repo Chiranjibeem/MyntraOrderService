@@ -43,6 +43,14 @@ public class Order {
 
     }
 
+    public Order(Order order){
+        this.setOrderId(order.getOrderId());
+        this.setPayment(order.getPayment());
+        this.setItem(order.getItem());
+        this.setCustomer(order.getCustomer());
+        this.setAmount(order.getAmount());
+    }
+
     public String getOrderId() {
         return orderId;
     }

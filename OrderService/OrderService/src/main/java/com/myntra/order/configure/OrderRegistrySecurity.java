@@ -1,13 +1,10 @@
 package com.myntra.order.configure;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
@@ -36,7 +33,7 @@ public class OrderRegistrySecurity extends WebSecurityConfigurerAdapter {
 
             @Override
             public boolean matches(CharSequence rawPassword, String encodedPassword) {
-                return rawPassword.toString().equals(encodedPassword) ? true : false;
+                return rawPassword.toString().equals(encodedPassword);
             }
         });
     }
@@ -45,8 +42,9 @@ public class OrderRegistrySecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
         http.headers().frameOptions().sameOrigin();
-        http.authorizeRequests().antMatchers("**/createOrder**").authenticated()
-                .anyRequest().permitAll().and().formLogin().permitAll();
+        http.authorizeRequests()
+                .antMatchers("**/createOrder/**","**/findOrder/**","**/findOrderByCustomer/**").authenticated()
+                .anyRequest().permitAll().and().formLogin().successForwardUrl("/login").permitAll();
         http.exceptionHandling().accessDeniedHandler(accessDeniedHandler);
         http.logout();
 

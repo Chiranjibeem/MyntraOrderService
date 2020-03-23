@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class OrderRegistryContoller {
@@ -31,7 +32,7 @@ public class OrderRegistryContoller {
         return dateFormat.format(date);
     }
 
-    @RequestMapping(value = "/createOrder/{custID}/{itemID}/{paymentType}",method = RequestMethod.GET)
+    @RequestMapping(value = "/createOrder/{custID}/{itemID}/{paymentType}", method = RequestMethod.GET)
     @ResponseBody
     @HystrixCommand(ignoreExceptions = OrderException.class, fallbackMethod = "createOrderFallback")
     @PreAuthorize("hasAnyRole('Customer')")
@@ -126,5 +127,49 @@ public class OrderRegistryContoller {
             throw new OrderException("Requested Customer Not Available in The Database ,Customer ID " + userID);
         }
     }
+
+    @RequestMapping(value = "/findOrder/{orderNo}", method = RequestMethod.GET)
+    @PreAuthorize("hasAnyRole('Customer','Admin')")
+    @ResponseBody
+    public ResponseEntity<Object> findOrderDetails(@PathVariable(name = "orderNo") String orderNo) {
+        if (orderNo != null) {
+            Order order = service.findOrder(orderNo);
+            if (order != null) {
+                return new ResponseEntity<Object>(order, HttpStatus.OK);
+            } else {
+                throw new OrderException("There is no Order exist in the database, Please enter different order no " + orderNo);
+            }
+        } else {
+            throw new OrderException("Order No Can Not Be Null, Please enter Order No and try Again");
+        }
+    }
+
+    @RequestMapping(value = "/findOrderByCustomer/{custID}", method = RequestMethod.GET)
+    @PreAuthorize("hasAnyRole('Customer')")
+    @ResponseBody
+    public ResponseEntity<Object> findOrderByCustomer(@PathVariable(name = "custID") String custID) {
+        if (custID != null) {
+            List<Customer> customerList = service.findOrderByCustomer(custID);
+            if (customerList != null && !customerList.isEmpty()) {
+                List<Order> orderList = customerList.stream().map(i -> new Order(i.getOrder())).collect(Collectors.toList());
+                return new ResponseEntity<Object>(orderList, HttpStatus.OK);
+            } else {
+                throw new OrderException("There is no Order exist in the database, Please enter different customer no " + custID);
+            }
+        } else {
+            throw new OrderException("Customer Id Can Not Be Null, Please enter cutsomer id and try Again");
+        }
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String homePage() {
+        return "Home Page";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String loginPage() {
+        return "Login Page";
+    }
+
 
 }

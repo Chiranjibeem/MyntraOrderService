@@ -24,8 +24,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 @EnableHystrix
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-@EnableJpaRepositories(basePackages = {"com.myntra.order"})
-@EntityScan(basePackages = "com.myntra.order")
+@EnableJpaRepositories(basePackages = {"com.myntra.order.repository"})
+@EntityScan(basePackages = "com.myntra.order.model")
 @EnableTransactionManagement
 @EnableJpaAuditing
 @EnableWebSecurity
