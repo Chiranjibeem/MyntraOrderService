@@ -161,11 +161,11 @@ public class OrderRegistryContoller {
         }
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/", method = RequestMethod.GET)
     public String homePage() {
         return "Home Page";
     }
-
+*/
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String loginPage() {
         return "Login Page";

@@ -36,13 +36,13 @@ public class OrderServiceApplication {
 		SpringApplication.run(OrderServiceApplication.class, args);
 	}
 
-	
+
 	@Bean
 	@LoadBalanced
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}
-	
+
 	@Bean
 	public DispatcherServlet dispatcherServlet () {
 	    DispatcherServlet ds = new DispatcherServlet();
