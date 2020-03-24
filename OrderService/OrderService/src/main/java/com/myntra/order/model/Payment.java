@@ -1,5 +1,7 @@
 package com.myntra.order.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,7 @@ import javax.persistence.Transient;
 import java.math.BigDecimal;
 
 @Entity(name = "M_ORD_TRAN_PAY")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Payment {
 
 	@Column(name = "PAYMENT_TYPE_ID")

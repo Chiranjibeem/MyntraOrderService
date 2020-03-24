@@ -113,21 +113,6 @@ public class OrderRegistryContoller {
         return new ResponseEntity<Object>("Service is Down, Please Try After Some Time ", HttpStatus.GATEWAY_TIMEOUT);
     }
 
-    public Customer getCustomer(String userID) throws OrderException {
-        Customer customer = null;
-        try {
-            customer = restTemplate.getForObject("http://CUSTOMER-REGISTRY/fetchCustomer/" + userID,
-                    Customer.class);
-        } catch (Exception e) {
-            throw new OrderException("There is an Error While Fetching Customer Details " + e);
-        }
-        if (customer != null) {
-            return customer;
-        } else {
-            throw new OrderException("Requested Customer Not Available in The Database ,Customer ID " + userID);
-        }
-    }
-
     @RequestMapping(value = "/findOrder/{orderNo}", method = RequestMethod.GET)
     @PreAuthorize("hasAnyRole('Customer','Admin')")
     @ResponseBody
@@ -161,11 +146,6 @@ public class OrderRegistryContoller {
         }
     }
 
-    /*@RequestMapping(value = "/", method = RequestMethod.GET)
-    public String homePage() {
-        return "Home Page";
-    }
-*/
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String loginPage() {
         return "Login Page";

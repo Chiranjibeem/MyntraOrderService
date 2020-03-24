@@ -44,7 +44,7 @@ public class OrderRegistrySecurity extends WebSecurityConfigurerAdapter {
         http.headers().frameOptions().sameOrigin();
         http.authorizeRequests()
                 .antMatchers("**/createOrder/**","**/findOrder/**","**/findOrderByCustomer/**").authenticated()
-                .anyRequest().permitAll().and().formLogin().successForwardUrl("/login").permitAll();
+                .anyRequest().permitAll().and().formLogin().loginPage("/login.html").successForwardUrl("/login").permitAll();
         http.exceptionHandling().accessDeniedHandler(accessDeniedHandler);
         http.logout();
 

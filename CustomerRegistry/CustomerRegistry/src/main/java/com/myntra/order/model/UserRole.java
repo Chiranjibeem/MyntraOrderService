@@ -6,7 +6,6 @@ import javax.persistence.*;
 public class UserRole {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="ROLE_ID")
     private String roleID;
     @Column(name="ROLE_NAME")

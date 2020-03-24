@@ -55,4 +55,9 @@ public class StaticController {
     public String stuffPage(){
         return "stuff";
     }
+
+    @GetMapping("/login.html")
+    public String loginPage(){
+        return "login";
+    }
 }

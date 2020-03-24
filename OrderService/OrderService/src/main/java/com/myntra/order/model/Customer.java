@@ -1,10 +1,12 @@
 package com.myntra.order.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.persistence.*;
 
 @Entity(name = "M_ORD_TRAN_CUST")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Customer {
 
     @Column(name = "CUST_ID")
@@ -22,17 +24,19 @@ public class Customer {
     private UserRole role;
     @Transient
     private String password;
-    @OneToOne(fetch = FetchType.LAZY,mappedBy = "customer")
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "customer")
     @JoinColumn(name = "order_id")
     @JsonBackReference
     private Order order;
+    @Transient
+    private String roleId;
 
     public Customer() {
     }
 
-    public Customer(Customer customer){
+    public Customer(Customer customer) {
         this.custId = customer.getCustId();
-        this.custName  = customer.getCustName();
+        this.custName = customer.getCustName();
         this.address = customer.getAddress();
         this.phoneNumber = customer.getPhoneNumber();
         this.role = customer.getRole();
@@ -101,5 +105,13 @@ public class Customer {
 
     public void setOrder(Order order) {
         this.order = order;
+    }
+
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
     }
 }
