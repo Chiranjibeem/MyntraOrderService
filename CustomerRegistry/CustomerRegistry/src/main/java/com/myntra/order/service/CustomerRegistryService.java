@@ -47,7 +47,12 @@ public class CustomerRegistryService {
 
     public Customer createCustomer(Customer customer) throws Exception {
         Customer updatedCustomer = null;
-        if (findCustomerDetails(customer.getCustId()) != null) {
+        try {
+            updatedCustomer = findCustomerDetails(customer.getCustId());
+        } catch (Exception e) {
+
+        }
+        if (updatedCustomer != null) {
             throw new Exception("Customer Already Exist :" + customer.getCustId());
         } else {
             try {
