@@ -3,6 +3,7 @@ package com.myntra.order.controller;
 import com.myntra.order.exception.OrderException;
 import com.myntra.order.model.*;
 import com.myntra.order.service.OrderRegistryService;
+import com.myntra.order.util.CustomerUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,6 +28,9 @@ public class OrderRegistryContoller {
     @Autowired
     private OrderRegistryService service;
 
+    @Autowired
+    private CustomerUtil customerUtil;
+
     public String getDate(Date date) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddhhmmss");
         return dateFormat.format(date);
@@ -34,7 +38,6 @@ public class OrderRegistryContoller {
 
     @RequestMapping(value = "/createOrder/{custID}/{itemID}/{paymentType}", method = RequestMethod.GET)
     @ResponseBody
-    @HystrixCommand(ignoreExceptions = OrderException.class, fallbackMethod = "createOrderFallback")
     @PreAuthorize("hasAnyRole('Customer')")
     public ResponseEntity<Object> createOrder(@PathVariable(name = "custID") String custID,
                                               @PathVariable(name = "itemID") String itemID, @PathVariable(name = "paymentType") String paymentType)
@@ -42,8 +45,7 @@ public class OrderRegistryContoller {
 
         Customer customer = null;
         try {
-            customer = restTemplate.getForObject("http://CUSTOMER-REGISTRY/fetchCustomer/" + custID,
-                    Customer.class);
+            customer = customerUtil.getCustomer(custID);
         } catch (Exception e) {
             throw new OrderException("There is an Error While Fetching Customer Details " + e);
         }
@@ -104,13 +106,6 @@ public class OrderRegistryContoller {
         } else {
             throw new OrderException("Customer Not Found In the Databse.Customer Id : " + custID);
         }
-    }
-
-    public ResponseEntity<Object> createOrderFallback(@PathVariable(name = "custID") String custID,
-                                                      @PathVariable(name = "itemID") String itemID, @PathVariable(name = "paymentType") String paymentType)
-            throws OrderException {
-
-        return new ResponseEntity<Object>("Service is Down, Please Try After Some Time ", HttpStatus.GATEWAY_TIMEOUT);
     }
 
     @RequestMapping(value = "/findOrder/{orderNo}", method = RequestMethod.GET)

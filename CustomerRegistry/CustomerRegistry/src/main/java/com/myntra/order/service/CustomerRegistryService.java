@@ -23,10 +23,19 @@ public class CustomerRegistryService {
     @Autowired
     private RoleRegistryRepository roleRepository;
 
-    public Customer findCustomerDetails(String custID) throws Exception {
+    public Customer findCustomerDetails(String... str) throws Exception {
         Customer customer = null;
         try {
-            customer = customerRepository.findById(custID).get();
+            if (str.length > 1) {
+                List<Customer> customerList = customerRepository.findCustomerByIdAndPassword(str[0], str[1]);
+                if (customerList != null && customerList.size() > 0) {
+                    customer = customerList.get(0);
+                } else {
+                    throw new Exception("Customer Does Not Exist or Bad Credentials");
+                }
+            } else {
+                customer = customerRepository.findById(str[0]).get();
+            }
         } catch (NoSuchElementException e) {
             throw new Exception("Unable to find Customer " + e);
         }
@@ -50,7 +59,6 @@ public class CustomerRegistryService {
         try {
             updatedCustomer = findCustomerDetails(customer.getCustId());
         } catch (Exception e) {
-
         }
         if (updatedCustomer != null) {
             throw new Exception("Customer Already Exist :" + customer.getCustId());
