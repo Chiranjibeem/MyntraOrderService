@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -40,13 +41,26 @@ public class OrderRegistrySecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+//        http.csrf().disable();
+//        http.headers().frameOptions().sameOrigin();
+//        http.authorizeRequests()
+//                .antMatchers("**//*createOrder*//**","**//*findOrder*//**","**//*findOrderByCustomer*//**").authenticated()
+//                .anyRequest().permitAll().and().formLogin().successForwardUrl("/login").permitAll();
+//        http.exceptionHandling().accessDeniedHandler(accessDeniedHandler);
+//        http.logout();
+
         http.csrf().disable();
         http.headers().frameOptions().sameOrigin();
         http.authorizeRequests()
-                .antMatchers("**/createOrder/**","**/findOrder/**","**/findOrderByCustomer/**").authenticated()
-                .anyRequest().permitAll().and().formLogin().successForwardUrl("/login").permitAll();
-        http.exceptionHandling().accessDeniedHandler(accessDeniedHandler);
-        http.logout();
+                .anyRequest().authenticated().and().formLogin()
+                .usernameParameter("custUserName").passwordParameter("custUserPassword").loginPage("/validateLogin").loginProcessingUrl("/validateLogin").permitAll()
+                .and().logout().logoutSuccessUrl("/validateLogin");
 
+
+    }
+
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().antMatchers("/createAccount");
     }
 }

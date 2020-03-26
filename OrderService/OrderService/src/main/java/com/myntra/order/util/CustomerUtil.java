@@ -4,6 +4,8 @@ import com.myntra.order.exception.OrderException;
 import com.myntra.order.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
