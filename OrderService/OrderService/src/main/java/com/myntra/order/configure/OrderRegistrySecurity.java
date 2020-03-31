@@ -61,6 +61,7 @@ public class OrderRegistrySecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/createAccount");
+        web.ignoring().antMatchers("/createAccount","/forgotPassword");
+
     }
 }

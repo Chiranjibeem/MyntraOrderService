@@ -20,53 +20,7 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,7 +32,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dev</find>
       <find>/images</find>
       <find>images</find>
       <find>Special Drinks 1</find>
@@ -92,6 +45,20 @@
       <find>login</find>
       <find>sign-in</find>
       <find>submit</find>
+      <find>Addr</find>
+      <find>EmailServiceImpl</find>
+      <find>devt</find>
+      <find>dev</find>
+      <find>forgo</find>
+      <find>createNewElement</find>
+      <find>id=&quot;ForgotPassword&quot;</find>
+      <find>ForgotPassword</find>
+      <find>input</find>
+      <find>contact</find>
+      <find>Ajit</find>
+      <find>Jamin</find>
+      <find>Reservation</find>
+      <find>chira</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,12 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/service/OrderRegistryService.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/repository/CustomerRegistryRepository.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/JacksonPreetyPrintConfiguration.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/main.css" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/WelcomeController.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/greeting.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/WebConfig.java" />
@@ -114,34 +75,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/repository/RoleRegistryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/model/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/CustomerRegistry/CustomerRegistryApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/model/Customer.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Order.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Payment.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/UserRole.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/OrderService/OrderServiceApplication.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/pom.xml" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/CustomerUtil.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/OrderRegistryContoller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/repository/CustomerRegistryRepository.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Login.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/service/CustomerRegistryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/controller/CustomerRegistryController.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/CustomUserDetailsService.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/CustomerUtil.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Customer.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/StaticController.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SmsSender.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/Example.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SendGridEmail.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myntra/order/model/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/ForgotPasswordController.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/about.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog-details.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/gallery.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html" />
       </list>
     </option>
   </component>
@@ -168,7 +144,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="27" />
     <option name="width" value="1346" />
@@ -180,37 +156,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PaymentRegistry" type="462c0819:PsiDirectoryNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PaymentRegistry" type="462c0819:PsiDirectoryNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PaymentRegistry" type="462c0819:PsiDirectoryNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PaymentRegistry" type="462c0819:PsiDirectoryNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +220,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static\images" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\CustomerRegistry\CustomerRegistry\src\main\resources" />
       <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\templates" />
       <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static" />
     </key>
@@ -272,19 +275,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myntra.order.ItemRegistry.ItemRegistryApplication" />
-      <module name="ItemRegistry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myntra.order.ItemRegistry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myntra.order.OrderService.OrderServiceApplication" />
       <module name="OrderService" />
@@ -311,13 +301,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmsSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myntra.order.util.SmsSender" />
+      <module name="OrderService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myntra.order.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.CustomerRegistryApplication" />
         <item itemvalue="Application.EurekaDiscoveryApplication" />
+        <item itemvalue="Application.SmsSender" />
         <item itemvalue="Application.PaymentRegistryApplication" />
-        <item itemvalue="Application.ItemRegistryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -336,9 +339,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30181542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31316188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -348,13 +350,13 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49848714" weight="0.40425533" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.4599018" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.40425533" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.4599018" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -363,7 +365,7 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30181542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31316188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -373,13 +375,13 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49848714" visible="true" weight="0.40425533" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.4599018" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.40425533" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.4599018" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,13 +447,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java</url>
-          <line>33</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java</url>
-          <line>26</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -486,34 +488,46 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SmsSender.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/EmailServiceImpl.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java</url>
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.5.RELEASE/spring-boot-autoconfigure-2.2.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateDefaultDdlAutoProvider.java</url>
           <line>41</line>
           <properties />
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/ForgotPasswordController.java</url>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/ForgotPasswordController.java</url>
+          <line>19</line>
           <properties />
-          <option name="timeStamp" value="41" />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -533,162 +547,31 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/css/baguetteBox.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="886" selection-start-line="886" selection-end-line="886" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/service/OrderRegistryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/repository/OrderRegistryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/OrderService/OrderServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/CustomerRegistry/CustomerRegistryApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="38" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.2.2.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
+    <entry file="file://$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.5.RELEASE/spring-data-commons-2.2.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+    <entry file="file://$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="88">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.5.RELEASE/spring-data-jpa-2.2.5.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+        <state relative-caret-position="88">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/repository/CustomerRegistryRepository.java">
+    <entry file="file://$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/repository/CustomerRegistryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="776" lean-forward="true" selection-start-line="757" selection-start-column="17" selection-end-line="776" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.2.4.RELEASE/spring-tx-5.2.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="225" selection-start-line="225" selection-end-line="225" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.4.RELEASE/spring-core-5.2.4.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        <state relative-caret-position="88">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -699,123 +582,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/WebConfig.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="104">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/exception/ErrorResponse.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="222">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/exception/OrderException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application2.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/exception/OrderExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SendGridEmail.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/service/CustomerRegistryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/controller/CustomerRegistryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="156">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.5.RELEASE/spring-boot-autoconfigure-2.2.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.5.RELEASE/spring-boot-autoconfigure-2.2.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateDefaultDdlAutoProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE-sources.jar!/org/springframework/boot/jdbc/EmbeddedDatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/EmailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SmsSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/OrderRegistryContoller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="511">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Login.java">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="40" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ModelAttribute.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="32" />
+        <state relative-caret-position="216">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        <state relative-caret-position="88">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myntra/order/service/CustomerRegistryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.2.RELEASE/spring-security-config-5.2.2.RELEASE.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-          <folding>
-            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="726">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.2.RELEASE/spring-security-config-5.2.2.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.2.RELEASE/spring-security-config-5.2.2.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="115" column="52" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="52" />
+        <state relative-caret-position="187">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/StaticController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="274">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#283#284#0" expanded="true" />
@@ -846,18 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="258">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/CustomerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -866,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/CustomUserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="203">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#542#543#0" expanded="true" />
             <element signature="e#573#574#0" expanded="true" />
@@ -879,8 +782,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="406">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/CustomerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/ForgotPasswordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -889,67 +819,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="238" column="27" selection-start-line="238" selection-start-column="27" selection-end-line="238" selection-end-column="27" />
+        <state relative-caret-position="330">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="84">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="463">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="220">
+          <caret line="67" column="95" selection-start-line="67" selection-start-column="95" selection-end-line="67" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="136">
+          <caret line="67" column="95" selection-start-line="67" selection-start-column="95" selection-end-line="67" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="170">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="382">
+          <caret line="67" column="95" selection-start-line="67" selection-start-column="95" selection-end-line="67" selection-end-column="95" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-06.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-05.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-03.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="189" column="32" lean-forward="true" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/static/images/stuff-img-04.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

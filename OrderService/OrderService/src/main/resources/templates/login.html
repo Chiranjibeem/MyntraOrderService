@@ -155,14 +155,8 @@ a{color:inherit;text-decoration:none}
 
 
 
-
-
-
-
-
-
-
     </style>
+
 </head>
 <div class="login-wrap">
     <div class="login-html">
@@ -185,50 +179,72 @@ a{color:inherit;text-decoration:none}
                         <b><font color="white"><span>Bad Credentials</span></font></b>
                     </div>
                 </div>
+                <div th:if="${param.success}">
+                    <div class="alert alert-info">
+                        <b><font color="white"><span th:text="${forgotPasswordStatus}"/></font></b>
+                    </div>
+                </div>
+                <div th:if="${param.error}">
+                    <div class="alert alert-info">
+                        <b><font color="white"><span th:text="${forgotPasswordStatus}"/></font></b>
+                    </div>
+                </div>
                 <form action="#" th:action="@{/validateLogin}" modelAttribute="signUp" th:object="${signUp}"
                       method="post">
                     <div class="group">
                         <label for="custUsername" class="label">Username</label>
-                        <input id="custUserName" type="text" class="input" th:id="custUserName" th:name="custUserName">
+                        <input required id="custUserName" type="text" class="input" th:id="custUserName"
+                               th:name="custUserName">
                     </div>
                     <div class="group">
                         <label for="custUserPassword" class="label">Password</label>
-                        <input id="custUserPassword" type="password" class="input" data-type="password"
+                        <input required id="custUserPassword" type="password" class="input" data-type="password"
                                th:id="custUserPassword"
                                th:name="custUserPassword">
                     </div>
                     <div class="group">
                         <input type="submit" class="button" value="Sign In">
                     </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <a href="#forgot">Forgot Password?</a>
-                    </div>
                 </form>
+                <div class="hr">
+                    <form action="#" th:action="@{/forgotPassword}" method="post">
+                        <div class="group">
+                            <label for="forgotPasswordUser" class="label">Username</label>
+                            <input required id="forgotPasswordUser" type="text" class="input" th:id="forgotPasswordUser"
+                                   th:name="forgotPasswordUser">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Forgot Password">
+                        </div>
+                    </form>
+                </div>
+
             </div>
             <div class="sign-up-htm">
                 <form action="#" th:action="@{/createAccount}" modelAttribute="customer" th:object="${customer}"
                       method="post">
                     <div class="group">
                         <label for="custId" class="label">Username</label>
-                        <input id="custId" type="text" class="input" th:id="custId" th:name="custId">
+                        <input required id="custId" type="text" class="input" th:id="custId" th:name="custId">
                     </div>
                     <div class="group">
                         <label for="password" class="label">Password</label>
-                        <input id="password" type="password" class="input" data-type="password" th:id="password"
+                        <input required id="password" type="password" class="input" data-type="password"
+                               th:id="password"
                                th:name="password">
                     </div>
                     <div class="group">
-                        <label for="address" class="label">Address</label>
-                        <input id="address" type="text" class="input" th:id="address" th:name="address">
+                        <label for="address" class="label">Email</label>
+                        <input required id="address" type="text" class="input" th:id="address" th:name="address">
                     </div>
                     <div class="group">
                         <label for="phoneNumber" class="label">PhoneNumber</label>
-                        <input id="phoneNumber" type="text" class="input" th:id="phoneNumber" th:name="phoneNumber">
+                        <input required id="phoneNumber" type="text" class="input" th:id="phoneNumber"
+                               th:name="phoneNumber">
                     </div>
                     <div class="group">
                         <label for="roleId" class="label">Role</label>
-                        <select th:name="roleId" th:id="roleId" class="input">
+                        <select required th:name="roleId" th:id="roleId" class="input">
                             <option th:value="'1'" th:text="Customer"></option>
                             <option th:value="'2'" th:text="Employee"></option>
                             <option th:value="'3'" th:text="Agent"></option>
