@@ -18,11 +18,11 @@ public class CustomerUtil {
         Customer customer = null;
         try {
             if (str.length > 1) {
-                customer = restTemplate.getForObject("http://CUSTOMER-REGISTRY/fetchCustomer/" + str[0] + "/" + str[1],
+                customer = restTemplate.getForObject("http://localhost:7001/fetchCustomer/" + str[0] + "/" + str[1],
                         Customer.class);
 
             } else {
-                customer = restTemplate.getForObject("http://CUSTOMER-REGISTRY/fetchCustomer/" + str[0],
+                customer = restTemplate.getForObject("http://localhost:7001/fetchCustomer/" + str[0],
                         Customer.class);
             }
             return customer;
