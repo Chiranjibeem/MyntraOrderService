@@ -113,7 +113,12 @@ h2 a {
   transition-timing-function: line;
 }
 
-@media (max-width: 800px) {
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media (min-width:400px max-width: 800px) {
 .container td:nth-child(4),
 .container th:nth-child(4) { display: none; }
 }
@@ -218,7 +223,7 @@ $(document).ready(function(){
 <div class="blog-box">
     <div class="container">
         <h2>Corona Status Update</h2>
-        <div class="form-group pull-right">
+        <div class="form-group pull-center">
             <br>
             <input type="text" class="search form-control" placeholder="What you looking for?">
         </div>
