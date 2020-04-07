@@ -124,11 +124,34 @@ h2 a {
 }
 
 
+
     </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('.search').on('keyup',function(){
+        var searchTerm = $(this).val().toLowerCase();
+        $('#userTbl tbody tr').each(function(){
+            var lineStr = $(this).text().toLowerCase();
+            if(lineStr.indexOf(searchTerm) === -1){
+                $(this).hide();
+            }else{
+                $(this).show();
+            }
+        });
+    });
+});
+
+    </script>
+
 </head>
 <body>
 <h2>Corona Status Update</h2>
-<table class="container">
+<div class="form-group pull-right">
+    <input type="text" class="search form-control" placeholder="What you looking for?">
+</div>
+<table class="container" id="userTbl">
     <thead>
     <tr>
         <th><h1>No.</h1></th>
@@ -139,7 +162,7 @@ h2 a {
     </thead>
     <tbody>
     <tr th:each="status, s : ${statusList}">
-        <td th:utext="${s.index + 1}" />
+        <td th:utext="${s.index + 1}"/>
         <td th:utext="${status.state}"/>
         <td>
             <p th:each="dist, d : ${status.districtData}">
