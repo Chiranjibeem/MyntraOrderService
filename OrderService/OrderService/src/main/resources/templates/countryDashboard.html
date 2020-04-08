@@ -230,19 +230,19 @@ $(document).ready(function(){
         <table class="container" id="userTbl">
             <thead>
             <tr>
-                <th><h1>No.</h1></th>
-                <th><h1>Country</h1></th>
-                <th><h1>Confirmed</h1></th>
-                <th><h1>Active</h1></th>
-                <th><h1>Recovered</h1></th>
-                <th><h1>Deceased</h1></th>
+                <td th:utext="Sno"/>
+                <td th:utext="Country"/>
+                <td th:utext="Confirmed"/>
+                <td th:utext="Active"/>
+                <td th:utext="Recovered"/>
+                <td th:utext="Deceased"/>
 
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td th:utext="1"/>
-                <td th:utext="INDIA"/>
+                <td th:utext="India"/>
                 <td th:utext="${stateAllStatus.confirmedCase}"/>
                 <td th:utext="${stateAllStatus.confirmedCase}-${stateAllStatus.recoveredCase}-${stateAllStatus.deceasedCase}"/>
                 <td th:utext="${stateAllStatus.recoveredCase}"/>
