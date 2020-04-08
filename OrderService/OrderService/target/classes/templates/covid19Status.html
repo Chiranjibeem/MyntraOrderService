@@ -203,7 +203,6 @@ $(document).ready(function(){
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Covid Update</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
@@ -212,6 +211,7 @@ $(document).ready(function(){
                             <a class="dropdown-item" href="/countryDashboard">Country Dashboard</a>
                         </div>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -230,10 +230,10 @@ $(document).ready(function(){
         <table class="container" id="userTbl">
             <thead>
             <tr>
-                <th><h1>No.</h1></th>
-                <th><h1>State</h1></th>
-                <th><h1>District</h1></th>
-                <th><h1>Confirmed</h1></th>
+                <td th:utext="Sno"/>
+                <td th:utext="State"/>
+                <td th:utext="District"/>
+                <td th:utext="Confirmed"/>
             </tr>
             </thead>
             <tbody>

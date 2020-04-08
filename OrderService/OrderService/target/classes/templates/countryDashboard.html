@@ -113,12 +113,71 @@ h2 a {
   transition-timing-function: line;
 }
 
-
-
 @media (min-width:400px max-width: 800px) {
 .container td:nth-child(4),
 .container th:nth-child(4) { display: none; }
 }
+
+.card-counter{
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
+  }
+
+  .card-counter:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
+  }
+
+  .card-counter.primary{
+    background-color: #007bff;
+    color: #FFF;
+  }
+
+  .card-counter.danger{
+    background-color: #ef5350;
+    color: #FFF;
+  }
+
+  .card-counter.success{
+    background-color: #66bb6a;
+    color: #FFF;
+  }
+
+  .card-counter.info{
+    background-color: #26c6da;
+    color: #FFF;
+  }
+
+  .card-counter i{
+    font-size: 5em;
+    opacity: 0.2;
+  }
+
+  .card-counter .count-numbers{
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+    color: black;
+  }
+
+  .card-counter .count-name{
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
+    color: white;
+  }
 
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -203,7 +262,6 @@ $(document).ready(function(){
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Covid Update</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
@@ -212,6 +270,7 @@ $(document).ready(function(){
                             <a class="dropdown-item" href="/countryDashboard">Country Dashboard</a>
                         </div>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -220,8 +279,44 @@ $(document).ready(function(){
 <!-- End header -->
 
 <div class="blog-box">
+<br><br><br>
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card-counter primary">
+                    <i class="fa fa-code-fork"></i>
+                    <span class="count-numbers" th:utext="${stateAllStatus.confirmedCase}"/>
+                    <span class="count-name">Confirmed</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter danger">
+                    <i class="fa fa-ticket"></i>
+                    <span class="count-numbers" th:utext="${stateAllStatus.confirmedCase}-${stateAllStatus.recoveredCase}-${stateAllStatus.deceasedCase}"/>
+                    <span class="count-name">Active</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter success">
+                    <i class="fa fa-database"></i>
+                    <span class="count-numbers" th:utext="${stateAllStatus.recoveredCase}"/>
+                    <span class="count-name">Recovered</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter info">
+                    <i class="fa fa-users"></i>
+                    <span class="count-numbers" th:utext="${stateAllStatus.deceasedCase}"/>
+                    <span class="count-name">Deceased</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <h2>Corona Status Update</h2>
         <div class="form-group pull-center">
             <br>
             <input type="text" class="search form-control" placeholder="What you looking for?">
@@ -230,23 +325,23 @@ $(document).ready(function(){
         <table class="container" id="userTbl">
             <thead>
             <tr>
-                <th><h1>No.</h1></th>
-                <th><h1>Country</h1></th>
-                <th><h1>Confirmed</h1></th>
-                <th><h1>Active</h1></th>
-                <th><h1>Recovered</h1></th>
-                <th><h1>Deceased</h1></th>
+                <td th:utext="Sno"/>
+                <td th:utext="State"/>
+                <td th:utext="Confirmed"/>
+                <td th:utext="Active"/>
+                <td th:utext="Recovered"/>
+                <td th:utext="Deceased"/>
 
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td th:utext="1"/>
-                <td th:utext="INDIA"/>
-                <td th:utext="${stateAllStatus.confirmedCase}"/>
-                <td th:utext="${stateAllStatus.confirmedCase}-${stateAllStatus.recoveredCase}-${stateAllStatus.deceasedCase}"/>
-                <td th:utext="${stateAllStatus.recoveredCase}"/>
-                <td th:utext="${stateAllStatus.deceasedCase}"/>
+            <tr th:each="status, s : ${stateAllStatuses}">
+                <td th:utext="${s.index + 1}"/>
+                <td th:utext="${status.name}"/>
+                <td th:utext="${status.confirmedCase}"/>
+                <td th:utext="${status.confirmedCase}-${status.recoveredCase}-${status.deceasedCase}"/>
+                <td th:utext="${status.recoveredCase}"/>
+                <td th:utext="${status.deceasedCase}"/>
 
             </tr>
             </tbody>

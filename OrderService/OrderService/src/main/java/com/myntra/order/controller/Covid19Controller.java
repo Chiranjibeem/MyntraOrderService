@@ -79,18 +79,24 @@ public class Covid19Controller {
     @Autowired
     RestTemplate restTemplate;
 
+    public List<CoronaStatus> fetchCovidStatusDistrictWise() throws Exception {
+        List<CoronaStatus> statusList = null;
+        String response = restTemplate.getForObject(covidStatusAPI, String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+        Collection<CoronaStatus> readValues = new ObjectMapper().readValue(
+                response, new TypeReference<Collection<CoronaStatus>>() {
+                }
+        );
+        statusList = readValues.stream().sorted((i, j) -> i.getState().compareTo(j.getState())).collect(Collectors.toList());
+        return statusList;
+    }
+
     @GetMapping("/covidUpdate")
     public ModelAndView fetchCovidStatusStateWise(Model model) {
         List<CoronaStatus> statusList = null;
         try {
-            String response = restTemplate.getForObject(covidStatusAPI, String.class);
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-            Collection<CoronaStatus> readValues = new ObjectMapper().readValue(
-                    response, new TypeReference<Collection<CoronaStatus>>() {
-                    }
-            );
-            statusList = readValues.stream().sorted((i, j) -> i.getState().compareTo(j.getState())).collect(Collectors.toList());
+            statusList = fetchCovidStatusDistrictWise();
             model.addAttribute("statusList", statusList);
         } catch (Exception e) {
             coronaStatus = e.getMessage();
@@ -114,10 +120,30 @@ public class Covid19Controller {
         List<ReportData> deceasedCaseList = getAllReport(dailyDeceasedCase);
         List<ReportData> recoveredCaseList = getAllReport(dailyRecoveredCase);
 
-        List<StateAllStatus> allStatuses = getAllStateStatus(confirmedCaseList, deceasedCaseList, recoveredCaseList);
-        StateAllStatus stateAllStatus = new StateAllStatus("India", allStatuses.stream().mapToInt(StateAllStatus::getConfirmedCase).sum(),
-                allStatuses.stream().mapToInt(StateAllStatus::getDeceasedCase).sum(),
-                allStatuses.stream().mapToInt(StateAllStatus::getRecoveredCase).sum());
+        List<StateAllStatus> stateAllStatuses = getAllStateStatus(confirmedCaseList, deceasedCaseList, recoveredCaseList);
+        List<CoronaStatus> statusList = null;
+        try {
+            statusList = fetchCovidStatusDistrictWise();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Iterator<StateAllStatus> iterator = stateAllStatuses.iterator();
+        while (iterator.hasNext()) {
+            StateAllStatus stateAllStatus = iterator.next();
+            Iterator<CoronaStatus> itr = statusList.iterator();
+            while (itr.hasNext()) {
+                CoronaStatus status = itr.next();
+                if (stateAllStatus.getName().equalsIgnoreCase(status.getState())) {
+                    stateAllStatus.setDistrictData(status.getDistrictData());
+                }
+            }
+        }
+
+        StateAllStatus stateAllStatus = new StateAllStatus("India", stateAllStatuses.stream().mapToInt(StateAllStatus::getConfirmedCase).sum(),
+                stateAllStatuses.stream().mapToInt(StateAllStatus::getDeceasedCase).sum(),
+                stateAllStatuses.stream().mapToInt(StateAllStatus::getRecoveredCase).sum());
+        model.addAttribute("stateAllStatuses", stateAllStatuses);
         model.addAttribute("stateAllStatus", stateAllStatus);
         return new ModelAndView("countryDashboard");
     }

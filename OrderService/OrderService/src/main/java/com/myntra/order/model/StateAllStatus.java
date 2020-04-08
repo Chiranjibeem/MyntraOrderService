@@ -1,11 +1,14 @@
 package com.myntra.order.model;
 
+import java.util.List;
+
 public class StateAllStatus {
 
     private String name;
     private int confirmedCase;
     private int deceasedCase;
     private int recoveredCase;
+    private List<DistrictData> districtData;
 
     public StateAllStatus(String name,int confirmedCase,int deceasedCase,int recoveredCase){
         this.name = name;
@@ -44,5 +47,13 @@ public class StateAllStatus {
 
     public void setRecoveredCase(int recoveredCase) {
         this.recoveredCase = recoveredCase;
+    }
+
+    public List<DistrictData> getDistrictData() {
+        return districtData;
+    }
+
+    public void setDistrictData(List<DistrictData> districtData) {
+        this.districtData = districtData;
     }
 }
