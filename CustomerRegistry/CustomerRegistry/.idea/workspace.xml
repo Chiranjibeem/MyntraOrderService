@@ -22,37 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="227" column="46" lean-forward="true" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog-details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="65">
+              <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -60,26 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="232" column="33" selection-start-line="232" selection-start-column="33" selection-end-line="232" selection-end-column="33" />
+            <state relative-caret-position="259">
+              <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4976">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="233" column="38" lean-forward="true" selection-start-line="233" selection-start-column="38" selection-end-line="233" selection-end-column="38" />
+            <state relative-caret-position="116">
+              <caret line="205" column="49" selection-start-line="205" selection-start-column="49" selection-end-line="205" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -87,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="207">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -96,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="620" column="40" selection-start-line="610" selection-start-column="4" selection-end-line="620" selection-end-column="40" />
+            <state relative-caret-position="120">
+              <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -105,8 +69,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
+            <state relative-caret-position="3079">
               <caret line="274" column="7" lean-forward="true" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -207,14 +207,14 @@
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog-details.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/gallery.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html" />
       </list>
     </option>
   </component>
@@ -1108,94 +1108,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9222">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="355">
+          <caret line="75" column="95" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7220">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="125">
+          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/blog-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="88">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4976">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="65">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="205" column="49" selection-start-line="205" selection-start-column="49" selection-end-line="205" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="207">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="620" column="40" selection-start-line="610" selection-start-column="4" selection-end-line="620" selection-end-column="40" />
+        <state relative-caret-position="120">
+          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
+        <state relative-caret-position="3079">
           <caret line="274" column="7" lean-forward="true" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="16">
+          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="232" column="33" selection-start-line="232" selection-start-column="33" selection-end-line="232" selection-end-column="33" />
+        <state relative-caret-position="108">
+          <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="227" column="46" lean-forward="true" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+        <state relative-caret-position="238">
+          <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="233" column="38" lean-forward="true" selection-start-line="233" selection-start-column="38" selection-end-line="233" selection-end-column="38" />
+        <state relative-caret-position="271">
+          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
         </state>
       </provider>
     </entry>
