@@ -30,6 +30,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+	.dropdown:hover .dropdown-menu {
+        display: block;
+}
+</style>
 
 </head>
 
@@ -66,7 +71,14 @@
 						</li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-						<li class="nav-item"><a class="nav-link" href="/coronaUpdate">Corona Update</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Covid Update</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="/covidUpdate">District Dashboard</a>
+								<a class="dropdown-item" href="/stateDashboard">State Dashboard</a>
+								<a class="dropdown-item" href="/countryDashboard">Country Dashboard</a>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
