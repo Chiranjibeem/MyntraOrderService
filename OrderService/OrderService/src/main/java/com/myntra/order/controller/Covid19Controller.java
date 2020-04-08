@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.myntra.order.model.CoronaStatus;
+import com.myntra.order.model.DistrictData;
 import com.myntra.order.model.ReportData;
 import com.myntra.order.model.StateAllStatus;
 import com.opencsv.CSVReader;
@@ -43,7 +44,7 @@ public class Covid19Controller {
         stateCode.put("AS", "Assam");
         stateCode.put("BR", "Bihar");
         stateCode.put("CH", "Chandigarh");
-        stateCode.put("CT", "Chattisgarh");
+        stateCode.put("CT", "Chhattisgarh");
         stateCode.put("DN", "Dadra and Nagar Haveli");
         stateCode.put("DD", "Daman and Diu");
         stateCode.put("DL", "Delhi");
@@ -55,8 +56,8 @@ public class Covid19Controller {
         stateCode.put("JH", "Jharkhand");
         stateCode.put("KA", "Karnataka");
         stateCode.put("KL", "Kerala");
-        stateCode.put("LA", "Lakshadweep Islands");
-        stateCode.put("LD", "Lakshadwee");
+        stateCode.put("LA", "Ladakh");
+        stateCode.put("LD", "Lakshadweep");
         stateCode.put("MP", "Madhya Pradesh");
         stateCode.put("MH", "Maharashtra");
         stateCode.put("MN", "Manipur");
@@ -64,7 +65,7 @@ public class Covid19Controller {
         stateCode.put("MZ", "Mizoram");
         stateCode.put("NL", "Nagaland");
         stateCode.put("OR", "Odisha");
-        stateCode.put("PY", "Pondicherry");
+        stateCode.put("PY", "Puducherry");
         stateCode.put("PB", "Punjab");
         stateCode.put("RJ", "Rajasthan");
         stateCode.put("SK", "Sikkim");
@@ -137,6 +138,16 @@ public class Covid19Controller {
                 if (stateAllStatus.getName().equalsIgnoreCase(status.getState())) {
                     stateAllStatus.setDistrictData(status.getDistrictData());
                 }
+            }
+            StringBuffer buffer = new StringBuffer();
+            if (stateAllStatus.getDistrictData() != null && stateAllStatus.getDistrictData().size() > 0) {
+                for (DistrictData districtData : stateAllStatus.getDistrictData()) {
+                    buffer.append(districtData.getDistrict() + "-" + districtData.getConfirmed() + "<br/>");
+                }
+                stateAllStatus.setDistrictDataWithCase(buffer.toString());
+            }
+            else{
+                stateAllStatus.setDistrictDataWithCase("-");
             }
         }
 

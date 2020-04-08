@@ -327,6 +327,7 @@ $(document).ready(function(){
             <tr>
                 <td th:utext="Sno"/>
                 <td th:utext="State"/>
+                <td th:utext="District-Confirmed"/>
                 <td th:utext="Confirmed"/>
                 <td th:utext="Active"/>
                 <td th:utext="Recovered"/>
@@ -338,11 +339,11 @@ $(document).ready(function(){
             <tr th:each="status, s : ${stateAllStatuses}">
                 <td th:utext="${s.index + 1}"/>
                 <td th:utext="${status.name}"/>
+                <td th:utext="${status.districtDataWithCase}"/>
                 <td th:utext="${status.confirmedCase}"/>
                 <td th:utext="${status.confirmedCase}-${status.recoveredCase}-${status.deceasedCase}"/>
                 <td th:utext="${status.recoveredCase}"/>
                 <td th:utext="${status.deceasedCase}"/>
-
             </tr>
             </tbody>
         </table>

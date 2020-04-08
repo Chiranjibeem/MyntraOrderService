@@ -9,6 +9,7 @@ public class StateAllStatus {
     private int deceasedCase;
     private int recoveredCase;
     private List<DistrictData> districtData;
+    private String districtDataWithCase;
 
     public StateAllStatus(String name,int confirmedCase,int deceasedCase,int recoveredCase){
         this.name = name;
@@ -55,5 +56,13 @@ public class StateAllStatus {
 
     public void setDistrictData(List<DistrictData> districtData) {
         this.districtData = districtData;
+    }
+
+    public String getDistrictDataWithCase() {
+        return districtDataWithCase;
+    }
+
+    public void setDistrictDataWithCase(String districtDataWithCase) {
+        this.districtDataWithCase = districtDataWithCase;
     }
 }

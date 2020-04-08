@@ -21,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+            <state relative-caret-position="200">
+              <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="340" column="36" selection-start-line="340" selection-start-column="36" selection-end-line="340" selection-end-column="36" />
+            <state relative-caret-position="396">
+              <caret line="341" column="63" selection-start-line="341" selection-start-column="63" selection-end-line="341" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -226,13 +226,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/StateAllStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="118">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#1212#1213#0" expanded="true" />
                 <element signature="e#1247#1248#0" expanded="true" />
                 <element signature="e#1315#1316#0" expanded="true" />
                 <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -241,8 +243,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="228" column="19" lean-forward="true" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
+            <state relative-caret-position="516">
+              <caret line="249" column="14" lean-forward="true" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -259,8 +261,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="246" column="21" lean-forward="true" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
+            <state relative-caret-position="202">
+              <caret line="242" column="16" lean-forward="true" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -277,8 +279,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>thym</find>
-      <find>login</find>
       <find>span</find>
       <find>th:</find>
       <find>jstl</find>
@@ -307,6 +307,8 @@
       <find>count-name</find>
       <find>bold</find>
       <find>card-</find>
+      <find>td</find>
+      <find>status</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -366,8 +368,8 @@
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/reservation.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stuff.html" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/StateAllStatus.java" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java" />
       </list>
     </option>
@@ -610,7 +612,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2934947" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -635,7 +637,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2934947" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -645,7 +647,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.507365" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.507365" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -771,13 +773,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java</url>
-          <line>130</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java</url>
-          <line>142</line>
+          <line>153</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
@@ -1306,6 +1308,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="249" column="14" lean-forward="true" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="242" column="16" lean-forward="true" selection-start-line="242" selection-start-column="16" selection-end-line="242" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/CoronaStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1316,44 +1332,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="341" column="63" selection-start-line="341" selection-start-column="63" selection-end-line="341" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/StateAllStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="118">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="e#1212#1213#0" expanded="true" />
             <element signature="e#1247#1248#0" expanded="true" />
             <element signature="e#1315#1316#0" expanded="true" />
             <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/covid19Status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="246" column="21" lean-forward="true" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/stateDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="228" column="19" lean-forward="true" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="340" column="36" selection-start-line="340" selection-start-column="36" selection-end-line="340" selection-end-column="36" />
+        <state relative-caret-position="200">
+          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
         </state>
       </provider>
     </entry>
