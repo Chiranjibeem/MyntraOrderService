@@ -171,12 +171,9 @@ h2 a {
     position: absolute;
     right: 35px;
     top: 65px;
-    font-style: italic;
-    text-transform: capitalize;
-    opacity: 0.5;
     display: block;
     font-size: 18px;
-    color: white;
+    color: black;
   }
 
     </style>
@@ -196,6 +193,59 @@ $(document).ready(function(){
     });
 });
     </script>
+
+    <script type="text/javascript" th:inline="javascript">
+    jQuery(function ($) {
+
+    /*<![CDATA[*/
+    var confirmedCaseHeader = /*[[${confirmedCaseHeader}]]*/ [];
+    var confirmedCaseData = /*[[${confirmedCaseData}]]*/ [];
+    var deceasedCaseData = /*[[${deceasedCaseData}]]*/ [];
+    var deceasedCaseHeader = /*[[${deceasedCaseHeader}]]*/ [];
+    console.log(confirmedCaseData);
+    console.log(deceasedCaseData);
+
+     /*]]>*/
+
+        $("#chart1").shieldChart({
+            exportOptions: {
+                image: false,
+                print: false
+            },
+            axisX: {
+                categoricalValues: confirmedCaseHeader
+            },
+            axisY: {
+                title: {
+                    text: "Number Of Person Got Confirmed"
+                }
+            },
+            dataSeries: [{
+                seriesType: "bar",
+                data: confirmedCaseData
+            }]
+    });
+
+    $("#chart4").shieldChart({
+            exportOptions: {
+                image: false,
+                print: false
+            },
+            axisX: {
+                categoricalValues: deceasedCaseHeader
+            },
+            axisY: {
+                title: {
+                    text: "No Of Person Got Deceased"
+                }
+            },
+            dataSeries: [{
+                seriesType: "bar",
+                data: deceasedCaseData
+            }]
+    });
+    });
+</script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -226,6 +276,11 @@ $(document).ready(function(){
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- you need to include the shieldui css and js assets in order for the charts to work -->
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+    <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
 
 </head>
 <body>
@@ -311,6 +366,31 @@ $(document).ready(function(){
                     <i class="fa fa-users"></i>
                     <span class="count-numbers" th:utext="${stateAllStatus.deceasedCase}"/>
                     <span class="count-name">Deceased</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3>Confirmed Case</h3>
+                    </div>
+                    <div class="card-block">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3>Deceased Case</h3>
+                    </div>
+                    <div class="card-block">
+                        <div id="chart4"></div>
+                    </div>
                 </div>
             </div>
         </div>
