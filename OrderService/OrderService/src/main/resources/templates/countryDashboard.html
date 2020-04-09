@@ -200,6 +200,8 @@ $(document).ready(function(){
     /*<![CDATA[*/
     var confirmedCaseHeader = /*[[${confirmedCaseHeader}]]*/ [];
     var confirmedCaseData = /*[[${confirmedCaseData}]]*/ [];
+    var recoveredCaseHeader = /*[[${recoveredCaseHeader}]]*/ [];
+    var recoveredCaseData = /*[[${recoveredCaseData}]]*/ [];
     var deceasedCaseData = /*[[${deceasedCaseData}]]*/ [];
     var deceasedCaseHeader = /*[[${deceasedCaseHeader}]]*/ [];
     console.log(confirmedCaseData);
@@ -226,7 +228,27 @@ $(document).ready(function(){
             }]
     });
 
-    $("#chart4").shieldChart({
+    $("#chart2").shieldChart({
+            exportOptions: {
+                image: false,
+                print: false
+            },
+            axisX: {
+                categoricalValues: recoveredCaseHeader
+            },
+            axisY: {
+                title: {
+                    text: "No Of Person Got Recovered"
+                }
+            },
+            dataSeries: [{
+                seriesType: "bar",
+                data: recoveredCaseData,
+                color:'green'
+            }]
+    });
+
+    $("#chart3").shieldChart({
             exportOptions: {
                 image: false,
                 print: false
@@ -241,9 +263,11 @@ $(document).ready(function(){
             },
             dataSeries: [{
                 seriesType: "bar",
-                data: deceasedCaseData
+                data: deceasedCaseData,
+                color:'red'
             }]
     });
+
     });
 </script>
 
@@ -373,7 +397,7 @@ $(document).ready(function(){
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card ">
                     <div class="card-header">
                         <h3>Confirmed Case</h3>
@@ -383,13 +407,23 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3>Recovered Case</h3>
+                    </div>
+                    <div class="card-block">
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card ">
                     <div class="card-header">
                         <h3>Deceased Case</h3>
                     </div>
                     <div class="card-block">
-                        <div id="chart4"></div>
+                        <div id="chart3"></div>
                     </div>
                 </div>
             </div>

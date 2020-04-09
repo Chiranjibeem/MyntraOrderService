@@ -157,8 +157,10 @@ public class Covid19Controller {
         model.addAttribute("stateAllStatuses", stateAllStatuses);
         model.addAttribute("stateAllStatus", stateAllStatus);
         model.addAttribute("confirmedCaseData",confirmedCaseList.stream().map(i->i.getTT()).toArray());
+        model.addAttribute("recoveredCaseData",recoveredCaseList.stream().map(i->i.getTT()).toArray());
         model.addAttribute("deceasedCaseData",deceasedCaseList.stream().map(i->i.getTT()).toArray());
         model.addAttribute("confirmedCaseHeader",confirmedCaseList.stream().map(i->i.getDate().substring(0,2)).toArray());
+        model.addAttribute("recoveredCaseHeader",recoveredCaseList.stream().map(i->i.getDate().substring(0,2)).toArray());
         model.addAttribute("deceasedCaseHeader",deceasedCaseList.stream().map(i->i.getDate().substring(0,2)).toArray());
         return new ModelAndView("countryDashboard");
     }
