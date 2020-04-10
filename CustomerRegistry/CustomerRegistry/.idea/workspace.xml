@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="2832" column="52" selection-start-line="2832" selection-start-column="32" selection-end-line="2832" selection-end-column="52" />
+            <state relative-caret-position="244">
+              <caret line="1435" column="56" lean-forward="true" selection-start-line="1435" selection-start-column="56" selection-end-line="1435" selection-end-column="56" />
               <folding>
                 <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
@@ -39,11 +39,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/svg11/svg-paint-attrib.rnc">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+            <state relative-caret-position="105">
+              <caret line="63" column="69" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+              <folding>
+                <element signature="e#1399#1400#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+            <state relative-caret-position="288">
+              <caret line="119" column="66" lean-forward="true" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -69,9 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Wes</find>
-      <find>Mad</find>
-      <find>path</find>
       <find>Chhattisgarh</find>
       <find>xlink:href=&quot;&quot;</find>
       <find>Siachen</find>
@@ -95,10 +96,13 @@
       <find>Maharashtra</find>
       <find>jamm</find>
       <find>span</find>
-      <find>Guj</find>
       <find>st-count</find>
       <find>count-num</find>
+      <find>Guj</find>
       <find>card-counter primary</find>
+      <find>jammu And Kashmir</find>
+      <find>dashboa</find>
+      <find>Jamm</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -128,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/ForgotPasswordController.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/repository/ReservationRepository.java" />
@@ -161,6 +164,7 @@
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/StateAllStatus.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html" />
+        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
       </list>
     </option>
   </component>
@@ -177,7 +181,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="27" />
     <option name="width" value="1346" />
@@ -189,8 +193,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +233,15 @@
               <item name="OrderService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="configure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,8 +258,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -382,7 +394,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2980333" />
@@ -395,7 +407,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.400982" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -410,7 +422,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2980333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2980333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -420,7 +432,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -625,17 +637,6 @@
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1115,15 +1116,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/Covid19Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        <state relative-caret-position="288">
+          <caret line="119" column="66" lean-forward="true" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="2832" column="52" selection-start-line="2832" selection-start-column="32" selection-end-line="2832" selection-end-column="52" />
+        <state relative-caret-position="244">
+          <caret line="1435" column="56" lean-forward="true" selection-start-line="1435" selection-start-column="56" selection-end-line="1435" selection-end-column="56" />
           <folding>
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
@@ -1132,6 +1133,17 @@
             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#table#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="63" column="69" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+          <folding>
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
           </folding>
         </state>
       </provider>
