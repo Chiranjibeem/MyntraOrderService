@@ -25,6 +25,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -182,8 +184,7 @@ public class Covid19Controller {
     }
 
     @GetMapping("/")
-    public ModelAndView fetchCovidCountryStatus(Model model) {
-        InetAddress inetAddress = null;
+    public ModelAndView fetchCovidCountryStatus(Model model, HttpServletRequest request, HttpServletResponse response) {
         try {
             List<ReportData> confirmedCaseList = getAllReport(dailyConfirmedCase);
             List<ReportData> deceasedCaseList = getAllReport(dailyDeceasedCase);
@@ -225,13 +226,9 @@ public class Covid19Controller {
             model.addAttribute("recoveredCaseHeader", recoveredCaseList.stream().map(i -> i.getDate().substring(0, 2)).toArray());
             model.addAttribute("deceasedCaseHeader", deceasedCaseList.stream().map(i -> i.getDate().substring(0, 2)).toArray());
 
-            inetAddress = InetAddress.getLocalHost();
-
-            String hostIp = inetAddress.toString();
-            String[] hostIP = hostIp.split("/");
             TrackUser trackUser = new TrackUser();
-            trackUser.setUserHost(hostIP[0]);
-            trackUser.setIpAddress(hostIP[1]);
+            trackUser.setUserHost(request.getRemoteHost());
+            trackUser.setIpAddress(request.getRemoteAddr());
             trackUser.setAccessURL("/countryDashboard");
             accessStatusReposiory.saveAndFlush(trackUser);
             return new ModelAndView("countryDashboard");
@@ -239,10 +236,9 @@ public class Covid19Controller {
         } catch (Exception e) {
             covidControllerStatus = e.getMessage();
             try {
-                inetAddress = InetAddress.getLocalHost();
                 ErrorStatus error = new ErrorStatus();
-                error.setUserHost(inetAddress.getHostName());
-                error.setIpAddress(String.valueOf(inetAddress.getAddress()));
+                error.setUserHost(request.getRemoteHost());
+                error.setIpAddress(request.getRemoteAddr());
                 error.setAccessURL("/countryDashboard");
                 error.setErrorMessgae(e.getMessage());
                 errorStatusReposiory.saveAndFlush(error);
@@ -512,7 +508,7 @@ public class Covid19Controller {
     }
 
     @GetMapping("/error")
-    public ModelAndView errorPage(){
+    public ModelAndView errorPage() {
         return new ModelAndView("error");
     }
 }

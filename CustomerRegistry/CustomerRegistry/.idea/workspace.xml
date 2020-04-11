@@ -22,20 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="30">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="307" column="30" selection-start-line="307" selection-start-column="30" selection-end-line="307" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="230" column="60" lean-forward="true" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="initializer##0;class#Covid19Controller#0" />
@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="242">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -108,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Mizoram</find>
       <find>Himachal Pradesh</find>
       <find>Uttara</find>
       <find>Haryana</find>
@@ -138,6 +137,7 @@
       <find>im</find>
       <find>countryDas</find>
       <find>spring.h2.console.enabled=true</find>
+      <find>/country</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -194,12 +194,12 @@
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/static/css/error-style.css" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/CovidExceptionHandlerResolver.java" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/error.html" />
-        <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/Covid19IndiaApplication.java" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/CovigConfig.java" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java" />
       </list>
     </option>
   </component>
@@ -507,7 +507,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.301059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -534,7 +533,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.301059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.301059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -544,7 +543,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -682,7 +681,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java</url>
-          <line>231</line>
+          <line>228</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
@@ -1080,17 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="307" column="30" selection-start-line="307" selection-start-column="30" selection-end-line="307" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Covid19Controller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.33/tomcat-embed-core-9.0.33.jar!/javax/servlet/annotation/WebServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-245">
@@ -1125,17 +1113,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="30">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="242">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="230" column="60" lean-forward="true" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Covid19Controller#0" />
+          </folding>
         </state>
       </provider>
     </entry>
