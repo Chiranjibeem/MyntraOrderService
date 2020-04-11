@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
+import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 
 @ControllerAdvice
@@ -21,14 +22,11 @@ public class CovidExceptionHandlerResolver {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(NoHandlerFoundException.class)
-    public ModelAndView handleNoHandlerFoundException(NoHandlerFoundException ex) {
+    public ModelAndView handleNoHandlerFoundException(NoHandlerFoundException ex, HttpServletRequest request) {
         try {
             ErrorStatus errorStatus = new ErrorStatus();
-            InetAddress address = InetAddress.getLoopbackAddress();
-            String hostIP = address.toString();
-            String[] hostIpAddress = hostIP.split("/");
-            errorStatus.setUserHost(hostIpAddress[0]);
-            errorStatus.setIpAddress(hostIpAddress[1]);
+            errorStatus.setUserHost(InetAddress.getByName(request.getRemoteAddr()).getHostName());
+            errorStatus.setIpAddress(request.getRemoteAddr());
             errorStatus.setAccessURL(ex.getRequestURL());
             errorStatus.setErrorMessgae("Message:The URL you have reached is not in service at this time (404)");
             errorStatusReposiory.saveAndFlush(errorStatus);

@@ -31,7 +31,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -227,7 +231,7 @@ public class Covid19Controller {
             model.addAttribute("deceasedCaseHeader", deceasedCaseList.stream().map(i -> i.getDate().substring(0, 2)).toArray());
 
             TrackUser trackUser = new TrackUser();
-            trackUser.setUserHost(request.getRemoteHost());
+            trackUser.setUserHost(InetAddress.getByName(request.getRemoteAddr()).getHostName());
             trackUser.setIpAddress(request.getRemoteAddr());
             trackUser.setAccessURL("/countryDashboard");
             accessStatusReposiory.saveAndFlush(trackUser);
@@ -237,7 +241,7 @@ public class Covid19Controller {
             covidControllerStatus = e.getMessage();
             try {
                 ErrorStatus error = new ErrorStatus();
-                error.setUserHost(request.getRemoteHost());
+                error.setUserHost(InetAddress.getByName(request.getRemoteAddr()).getHostName());
                 error.setIpAddress(request.getRemoteAddr());
                 error.setAccessURL("/countryDashboard");
                 error.setErrorMessgae(e.getMessage());
@@ -511,4 +515,5 @@ public class Covid19Controller {
     public ModelAndView errorPage() {
         return new ModelAndView("error");
     }
+
 }
