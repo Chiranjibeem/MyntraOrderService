@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Covid19India/Covid19India.iml" filepath="$PROJECT_DIR$/../../Covid19India/Covid19India.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomerRegistry.iml" filepath="$PROJECT_DIR$/CustomerRegistry.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/EurekaDiscovery.iml" filepath="$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/EurekaDiscovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/ItemRegistry.iml" filepath="$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/ItemRegistry.iml" />

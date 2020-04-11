@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Covid19India" />
         <module name="CustomerRegistry" />
         <module name="EurekaDiscovery" />
         <module name="ItemRegistry" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Covid19India" target="1.8" />
       <module name="CustomerRegistry" target="1.8" />
       <module name="EurekaDiscovery" target="1.8" />
       <module name="ItemRegistry" target="1.8" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Covid19India" options="-parameters" />
       <module name="CustomerRegistry" options="-parameters" />
       <module name="EurekaDiscovery" options="-parameters" />
       <module name="ItemRegistry" options="-parameters" />

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/pom.xml" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/pom.xml" />
         <option value="$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Covid19India/pom.xml" />
       </list>
     </option>
   </component>
