@@ -23,23 +23,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="342" column="49" lean-forward="true" selection-start-line="342" selection-start-column="49" selection-end-line="342" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="initializer##0;class#Covid19Controller#0" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -47,77 +34,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="2801" column="14" selection-start-line="2801" selection-start-column="9" selection-end-line="2801" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/css/dataTables.bootstrap4.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/js/datatables-demo.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="1570" column="40" selection-start-line="1570" selection-start-column="40" selection-end-line="1570" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/js/dataTables.bootstrap4.js">
+        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/countryDashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3632">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/CovidExceptionHandlerResolver.java">
+        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/CovigConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/Covid19IndiaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+            <state relative-caret-position="178">
+              <caret line="70" column="35" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,7 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Andhra Pradesh</find>
       <find>Maharashtra</find>
       <find>jamm</find>
       <find>st-count</find>
@@ -168,6 +103,7 @@
       <find>50</find>
       <find>script</find>
       <find>country</find>
+      <find>3803</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -228,8 +164,8 @@
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/CovidExceptionHandlerResolver.java" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/static/js/datatables-demo.js" />
-        <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html" />
         <option value="$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java" />
+        <option value="$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html" />
       </list>
     </option>
   </component>
@@ -902,13 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/CovidSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/CovidSecurity.java" />
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -960,16 +890,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" lean-forward="true" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/configure/WebConfig.java" />
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -984,13 +905,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/static/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/static/js/custom.js" />
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1022,13 +937,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/serviceError.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/serviceError.html" />
     <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/css/error-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -1117,14 +1026,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="198">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/js/dataTables.bootstrap4.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/js/dataTables.bootstrap4.css" />
     <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/static/css/dataTables.bootstrap4.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1158,19 +1065,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="342" column="49" lean-forward="true" selection-start-line="342" selection-start-column="49" selection-end-line="342" selection-end-column="49" />
+        <state relative-caret-position="178">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Covid19Controller#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="2801" column="14" selection-start-line="2801" selection-start-column="9" selection-end-line="2801" selection-end-column="14" />
+        <state relative-caret-position="154">
+          <caret line="1570" column="40" selection-start-line="1570" selection-start-column="40" selection-end-line="1570" selection-end-column="40" />
         </state>
       </provider>
     </entry>
