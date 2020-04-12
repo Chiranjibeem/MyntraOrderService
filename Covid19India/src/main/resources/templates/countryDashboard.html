@@ -287,9 +287,12 @@ h2 a {
 
     <!-- Populate Data After Clicking on State-->
     <script type="text/javascript" th:inline="javascript">
+
     $(document).ready(function() {
     /*<![CDATA[*/
     var allStateStatus = /*[[${stateAllStatuses}]]*/ [];
+    var prePathClicked;
+    var preColor;
      /*]]>*/
 
         $("path").click(function() {
@@ -297,12 +300,17 @@ h2 a {
          $.each(allStateStatus, function(index, allState){
          console.log(allState.name);
             if(pathClicked == allState.name){
+            if (typeof prePathClicked  !== "undefined"){
+                $("[id="+"'"+prePathClicked+"'"+"]").removeAttr('style');
+            }
               $("#confirmedID").html(allState.confirmedCase);
               $("#activeID").html(allState.confirmedCase-allState.recoveredCase-allState.deceasedCase);
               $("#recoveredID").html(allState.recoveredCase);
               $("#deceasedID").html(allState.deceasedCase);
               $("#stateID").html(pathClicked);
-              $("[id="+"'"+pathClicked+"'"+"]").css({ "fill":"green" });
+              $("[id="+"'"+pathClicked+"'"+"]").css({ "fill":"blue" });
+              prePathClicked = pathClicked;
+              preColor = $("[id="+"'"+pathClicked+"'"+"]").css("fill");
             }
             });
 
