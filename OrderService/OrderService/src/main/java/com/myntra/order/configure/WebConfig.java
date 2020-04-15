@@ -12,7 +12,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(
-                "/webjars/**",
+                "/webjars/*a*",
                 "/images/**",
                 "/css/**",
                 "/js/**",

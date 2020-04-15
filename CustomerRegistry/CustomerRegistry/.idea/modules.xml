@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CustomerRegistry.iml" filepath="$PROJECT_DIR$/CustomerRegistry.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/EurekaDiscovery.iml" filepath="$PROJECT_DIR$/../../EurekaDiscovery/EurekaDiscovery/EurekaDiscovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/ItemRegistry.iml" filepath="$PROJECT_DIR$/../../ItemRegistry/ItemRegistry/ItemRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../MailExchange/MailExchange.iml" filepath="$PROJECT_DIR$/../../MailExchange/MailExchange.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../OrderService/OrderService/OrderService.iml" filepath="$PROJECT_DIR$/../../OrderService/OrderService/OrderService.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/PaymentRegistry.iml" filepath="$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/PaymentRegistry.iml" />
     </modules>

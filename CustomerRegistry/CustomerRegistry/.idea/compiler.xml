@@ -10,6 +10,7 @@
         <module name="CustomerRegistry" />
         <module name="EurekaDiscovery" />
         <module name="ItemRegistry" />
+        <module name="MailExchange" />
         <module name="OrderService" />
         <module name="PaymentRegistry" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="CustomerRegistry" target="1.8" />
       <module name="EurekaDiscovery" target="1.8" />
       <module name="ItemRegistry" target="1.8" />
+      <module name="MailExchange" target="1.8" />
       <module name="OrderService" target="1.8" />
       <module name="PaymentRegistry" target="1.8" />
     </bytecodeTargetLevel>
@@ -29,6 +31,7 @@
       <module name="CustomerRegistry" options="-parameters" />
       <module name="EurekaDiscovery" options="-parameters" />
       <module name="ItemRegistry" options="-parameters" />
+      <module name="MailExchange" options="-parameters" />
       <module name="OrderService" options="-parameters" />
       <module name="PaymentRegistry" options="-parameters" />
     </option>

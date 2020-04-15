@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Personal Settings</title>
+
+    <!-- Meta Informations -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="browser-components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="browser-components/font-awesome/css/font-awesome.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="browser-components/select2/dist/css/select2.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="browser-components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.4.2/css/buttons.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="browser-components/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+    folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="hold-transition skin-yellow-light sidebar-mini fixed">
+
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="#" class="logo" style="background-color:lightskyblue;">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b><i class="fa fa-paper-plane-o"></i></b></span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b> Mail Exchage </b></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" style="background-color:lightskyblue;">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="images/avatar5.png" class="user-image" alt="User Image">
+                            <span class="hidden-xs">jan</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="images/avatar5.png" class="img-circle" alt="User Image">
+
+                                <p>
+                                    jan
+                                    <small>Member since Mar, 2020</small>
+                                </p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/logout" class="btn btn-default btn-flat"
+                                       onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                                        Sign out
+                                    </a>
+
+                                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar" style="background-color:lightskyblue;">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="images/avatar5.png" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>jan</p>
+                    <i class="fa fa-circle text-success"></i> Online
+                </div>
+            </div>
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">NAVIGATION</li>
+                <li class="">
+                    <a href="/home">
+                        <i class="fa fa-connectdevelop "></i> <span>Home</span>
+                    </a>
+                </li>
+                <li class="treeview ">
+                    <a href="#">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>Send Mail</span>
+                        <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+                    </a>
+                    <ul class="treeview-menu" style="" >
+                        <li class=""><a href="/sendMailList"><i class="fa fa-circle-o"></i> Send Mail List</a></li>
+                        <li class=""><a href="/sendNewEmail"><i class="fa fa-circle-o"></i> Send New Mail</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="#">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>All Accounts</span>
+                        <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+                    </a>
+                    <ul class="treeview-menu" style="" >
+                        <li class=""><a href="/accountList"><i class="fa fa-circle-o"></i> Account List</a></li>
+                        <li class=""><a href="/addAccount"><i class="fa fa-circle-o"></i> Add Account</a></li>
+                        <li class=""><a href="/importContacts"><i class="fa fa-circle-o"></i> Import Accounts</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="#">
+                        <i class="fa fa-cubes"></i>
+                        <span>Groups</span>
+                        <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/groupList"><i class="fa fa-circle-o"></i> Group List</a></li>
+                        <li class=""><a href="/addGroup"><i class="fa fa-circle-o"></i> Add Group</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="/generalSettings">
+                        <i class="fa fa-sliders"></i> <span>General Setting</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/personalSettings">
+                        <i class="fa fa-user-o"></i> <span>Personal Setting</span>
+                    </a>
+                </li>
+                <li class="treeview ">
+                    <a href="#">
+                        <i class="fa fa-users"></i> <span>Users</span>
+                        <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/userList"><i class="fa fa-circle-o"></i> User List</a></li>
+                        <li class=""><a href="/addUser"><i class="fa fa-circle-o"></i> Add User</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="#">
+                        <i class="fa fa-server"></i> <span>Mailer Setup</span>
+                        <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/mailerList"><i class="fa fa-circle-o"></i> Mailer List</a></li>
+                        <li class=""><a href="/addMailer"><i class="fa fa-circle-o"></i> Add Mailer</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i><span>Log out</span>
+                    </a>
+                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                    </form>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1> Edit User </h1>
+            <ol class="breadcrumb">
+                <li><a href="/home"><i class="fa fa-connectdevelop "></i> Home</a></li>
+                <li><a href="#">User</a></li>
+                <li class="active">Edit User</li>
+            </ol>
+        </section>
+
+        <section class="content">
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <!-- general form elements -->
+                    <div class="box box-primary box-bg with-border">
+                        <div class="box-haeder text-center">
+                            <h3>Basic Info</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- form start -->
+                        <form method="POST" action="/user39" accept-charset="UTF-8"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                            <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" value="jan" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" value="admin@gmail.com" />
+                                </div>
+                                <div class="box-footer text-center">
+                                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- general form elements -->
+                    <div class="box box-primary box-bg with-border">
+                        <div class="box-haeder text-center">
+                            <h3>Change Password</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- form start -->
+                        <form method="POST" action="updatePassword" accept-charset="UTF-8"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                            <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="name">New Password</label>
+                                    <input type="password" name="new_password" class="form-control" placeholder="Enter New Password" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Re-Type Password</label>
+                                    <input type="password" name="con_password" class="form-control" placeholder="Re-Type Password" />
+                                </div>
+                                <div class="box-footer text-center">
+                                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.0.0
+        </div>
+        <strong>
+            Freedom
+
+        </strong>
+    </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="browser-components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="browser-components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="browser-components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="browser-components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="browser-components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- bootstrap datetimepicker -->
+<script type="text/javascript" src="browser-components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script src="browser-components/select2/dist/js/select2.full.min.js"></script>
+<script src="js/adminlte.min.js"></script>
+
+
+<script src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.0/js/responsive.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.print.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+	  $.widget.bridge('uibutton', $.ui.button);
+	  $('#table').DataTable();
+	  $('.select2').select2();
+	  //DateTimepicker
+	  $('#datetimepicker').datetimepicker({
+	        weekStart: 1,
+	        todayBtn:  1,
+			autoclose: 1,
+			todayHighlight: 1,
+			startView: 2,
+			forceParse: 0,
+	        showMeridian: 1
+	    });
+
+	</script>
+
+
+</body>
+</html>

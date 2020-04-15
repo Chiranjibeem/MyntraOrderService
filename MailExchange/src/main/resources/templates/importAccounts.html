@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Import Accounts</title>
+
+  <!-- Meta Informations -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="browser-components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="browser-components/font-awesome/css/font-awesome.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="browser-components/select2/dist/css/select2.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="browser-components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.4.2/css/buttons.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="browser-components/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+  folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="hold-transition skin-yellow-light sidebar-mini fixed">
+
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo" style="background-color:lightskyblue;">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b><i class="fa fa-paper-plane-o"></i></b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b> Mail Exchage </b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" style="background-color:lightskyblue;">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/avatar5.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">jan</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="images/avatar5.png" class="img-circle" alt="User Image">
+
+                <p>
+                  jan
+                  <small>Member since Mar, 2020</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="/logout" class="btn btn-default btn-flat"
+                     onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                    Sign out
+                  </a>
+
+                  <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                    <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar" style="background-color:lightskyblue;">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="images/avatar5.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>jan</p>
+          <i class="fa fa-circle text-success"></i> Online
+        </div>
+      </div>
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">NAVIGATION</li>
+        <li class="">
+          <a href="/home">
+            <i class="fa fa-connectdevelop "></i> <span>Home</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-paper-plane-o"></i>
+            <span>Send Mail</span>
+            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+          </a>
+          <ul class="treeview-menu" style="" >
+            <li class=""><a href="/sendMailList"><i class="fa fa-circle-o"></i> Send Mail List</a></li>
+            <li class=""><a href="/sendNewEmail"><i class="fa fa-circle-o"></i> Send New Mail</a></li>
+          </ul>
+        </li>
+        <li class="treeview menu-open active">
+          <a href="#">
+            <i class="fa fa-envelope-o"></i>
+            <span>All Accounts</span>
+            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+          </a>
+          <ul class="treeview-menu" style="" >
+            <li class=""><a href="/accountList"><i class="fa fa-circle-o"></i> Account List</a></li>
+            <li class=""><a href="/addAccount"><i class="fa fa-circle-o"></i> Add Account</a></li>
+            <li class="active"><a href="/importContacts"><i class="fa fa-circle-o"></i> Import Accounts</a></li>
+          </ul>
+        </li>
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-cubes"></i>
+            <span>Groups</span>
+            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class=""><a href="/groupList"><i class="fa fa-circle-o"></i> Group List</a></li>
+            <li class=""><a href="/addGroup"><i class="fa fa-circle-o"></i> Add Group</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="/generalSettings">
+            <i class="fa fa-sliders"></i> <span>General Setting</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="/personalSettings">
+            <i class="fa fa-user-o"></i> <span>Personal Setting</span>
+          </a>
+        </li>
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>Users</span>
+            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class=""><a href="/userList"><i class="fa fa-circle-o"></i> User List</a></li>
+            <li class=""><a href="/addUser"><i class="fa fa-circle-o"></i> Add User</a></li>
+          </ul>
+        </li>
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-server"></i> <span>Mailer Setup</span>
+            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class=""><a href="/mailerList"><i class="fa fa-circle-o"></i> Mailer List</a></li>
+            <li class=""><a href="/addMailer"><i class="fa fa-circle-o"></i> Add Mailer</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i><span>Log out</span>
+          </a>
+          <form id="logout-form" action="/logout" method="POST" style="display: none;">
+            <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+          </form>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1> Import Email </h1>
+      <ol class="breadcrumb">
+        <li><a href="/home"><i class="fa fa-connectdevelop "></i> Home</a></li>
+        <li><a href="#">Email</a></li>
+        <li class="active">Import Email</li>
+      </ol>
+    </section>
+
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary box-bg with-border">
+            <div class="box-header text-center">
+              <p class="text-right">
+                <a class="btn btn-info" href="/addAccount">Add Account</a>
+                <a class="btn btn-info" href="/accountList"> Account List</a>
+              </p>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form method="POST" action="importEmails" accept-charset="UTF-8" enctype="multipart/form-data"><input name="_token" type="hidden" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+              <input type="hidden" name="_token" value="eoGtlePLtgPC0wGLjRxeLKiFyYGsbxWZcPqfNYmJ">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="group_id">Group</label>
+                  <select name="group_id" class="form-control select2">
+                    <option value="">Select Group</option>
+                    <option value="120">011</option>
+                    <option value="12">100</option>
+                    <option value="29">11</option>
+                    <option value="124">123</option>
+                    <option value="105">A</option>
+                    <option value="118">ABEGUNDE</option>
+                    <option value="25">acreditados cba</option>
+                    <option value="44">admin</option>
+                    <option value="114">aelius</option>
+                    <option value="91">Ahmad</option>
+                    <option value="96">Ahmet</option>
+                    <option value="103">Aleks</option>
+                    <option value="115">Alex Teste</option>
+                    <option value="33">AS</option>
+                    <option value="62">asas</option>
+                    <option value="47">Asdf</option>
+                    <option value="52">atifsa</option>
+                    <option value="69">atulyansh</option>
+                    <option value="129">AWA test</option>
+                    <option value="130">Bitcoin</option>
+                    <option value="56">Calesta</option>
+                    <option value="107">check</option>
+                    <option value="64">db1</option>
+                    <option value="101">Demo</option>
+                    <option value="60">deneme</option>
+                    <option value="92">denmee</option>
+                    <option value="53">Despacitoy</option>
+                    <option value="27">dj</option>
+                    <option value="75">Elmo</option>
+                    <option value="23">empfaenger</option>
+                    <option value="24">essai</option>
+                    <option value="89">eWolrldmark</option>
+                    <option value="37">faisal</option>
+                    <option value="68">FELLOW</option>
+                    <option value="57">Fernando Brazil</option>
+                    <option value="7">fsdfsdfs</option>
+                    <option value="87">gdsgsg</option>
+                    <option value="97">gg</option>
+                    <option value="98">giotest</option>
+                    <option value="4">Group Name</option>
+                    <option value="82">Healthuu</option>
+                    <option value="85">hjg</option>
+                    <option value="26">hu</option>
+                    <option value="54">INDRASEN KUMAR</option>
+                    <option value="28">innovate n promote</option>
+                    <option value="66">iyti</option>
+                    <option value="2">j</option>
+                    <option value="71">k,k,</option>
+                    <option value="106">KD Market Insights</option>
+                    <option value="131">khbkj</option>
+                    <option value="117">KringleBase</option>
+                    <option value="83">Lala</option>
+                    <option value="8">lolo</option>
+                    <option value="21">mahdi bourkhis</option>
+                    <option value="90">Mahnoor</option>
+                    <option value="81">Management</option>
+                    <option value="70">mani</option>
+                    <option value="88">MBA</option>
+                    <option value="110">mbj</option>
+                    <option value="80">murat</option>
+                    <option value="6">MWDC</option>
+                    <option value="55">my</option>
+                    <option value="100">mysore</option>
+                    <option value="18">new group</option>
+                    <option value="5">New group one</option>
+                    <option value="17">NEW TEST</option>
+                    <option value="76">new222</option>
+                    <option value="113">News</option>
+                    <option value="94">Ok</option>
+                    <option value="122">oko</option>
+                    <option value="119">pessoal</option>
+                    <option value="14">Pralit</option>
+                    <option value="123">qsfsq</option>
+                    <option value="63">rachido</option>
+                    <option value="42">rizve Joarder</option>
+                    <option value="46">rrr</option>
+                    <option value="108">sadasda</option>
+                    <option value="95">sadsdsds</option>
+                    <option value="61">salih</option>
+                    <option value="22">sample</option>
+                    <option value="11">scqsc</option>
+                    <option value="67">shahzad</option>
+                    <option value="104">Shataj</option>
+                    <option value="59">shinja</option>
+                    <option value="58">Shubham Bhargava</option>
+                    <option value="99">Tejpal Rajput</option>
+                    <option value="9">Test</option>
+                    <option value="31">test aja</option>
+                    <option value="3">Test mail group</option>
+                    <option value="32">test27</option>
+                    <option value="38">testadtcaz</option>
+                    <option value="39">teste</option>
+                    <option value="77">teste mkt</option>
+                    <option value="45">testesito</option>
+                    <option value="84">testestest</option>
+                    <option value="41">testing</option>
+                    <option value="20">testkare</option>
+                    <option value="93">testoGroup</option>
+                    <option value="121">tew</option>
+                    <option value="73">TOTO</option>
+                    <option value="16">tststtggg</option>
+                    <option value="36">ttservice</option>
+                    <option value="72">UAE</option>
+                    <option value="40">vikash</option>
+                    <option value="128">wind</option>
+                    <option value="109">X</option>
+                    <option value="13">x123</option>
+                    <option value="116">xmaull</option>
+                    <option value="43">xxxx</option>
+                    <option value="30">فثفسف</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sample_file">Select File to Import (txt, xlsx, xls, csv)</label>
+                  <input class="form-control" name="sample_file" type="file">
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer text-center">
+                <button type="submit" name="submit" id="submit" class="btn btn-primary">Add Email</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary box-bg with-border">
+            <div class="box-header text-center">
+              <h3>Sample Files</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="form-group">
+                <label for="group_id">Excel File</label>
+                <div>
+                  Download the sample file, Edit the data excluding the first row and upload it. <a href="images/sample-excel.xlsx" download><button class="btn btn-sm btn-success">Download Excel</button></a>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="group_id">Text File</label>
+                <div>
+                  Download the sample file, Edit the emails and upload it. (Do not Use any Space) <a href="images/sample-test.txt" download><button class="btn btn-sm btn-success">Download Text</button></a>
+                </div>
+              </div>
+              <p class="text-center">No need to download if you already have the file.</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0.0
+    </div>
+    <strong>
+      Freedom
+
+    </strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="browser-components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="browser-components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="browser-components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="browser-components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="browser-components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- bootstrap datetimepicker -->
+<script type="text/javascript" src="browser-components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script src="browser-components/select2/dist/js/select2.full.min.js"></script>
+<script src="js/adminlte.min.js"></script>
+
+
+<script src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.0/js/responsive.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.print.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+	  $.widget.bridge('uibutton', $.ui.button);
+	  $('#table').DataTable();
+	  $('.select2').select2();
+	  //DateTimepicker
+	  $('#datetimepicker').datetimepicker({
+	        weekStart: 1,
+	        todayBtn:  1,
+			autoclose: 1,
+			todayHighlight: 1,
+			startView: 2,
+			forceParse: 0,
+	        showMeridian: 1
+	    });
+
+	</script>
+
+
+</body>
+</html>
