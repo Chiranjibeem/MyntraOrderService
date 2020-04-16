@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,7 +73,8 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="images/avatar5.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">jan</span>
+              <span class="hidden-xs">
+                <span sec:authentication="name"/></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -81,8 +82,7 @@
                 <img src="images/avatar5.png" class="img-circle" alt="User Image">
 
                 <p>
-                  jan
-                  <small>Member since Mar, 2020</small>
+                  <span sec:authentication="name"/>
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -118,8 +118,8 @@
           <img src="images/avatar5.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>jan</p>
-          <i class="fa fa-circle text-success"></i> Online
+          <small><p><span sec:authentication="name"/></p>
+          <i class="fa fa-circle text-success"></i> Online</small>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
