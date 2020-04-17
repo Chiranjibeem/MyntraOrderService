@@ -55,29 +55,33 @@ public class SendMailController {
         } else {
             String fileName = StringUtils.cleanPath(newEmail.getTemplate().getOriginalFilename());
             try {
-                Path path = Paths.get(UPLOAD_DIR + fileName + getTimestamp());
-                Files.copy(newEmail.getTemplate().getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
-                File file = path.toFile();
+                if (fileName.toUpperCase().endsWith("CSV") || fileName.toUpperCase().endsWith("TXT")) {
+                    Path path = Paths.get(UPLOAD_DIR + fileName + getTimestamp());
+                    Files.copy(newEmail.getTemplate().getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+                    File file = path.toFile();
 
-                List<EmailTemplate> emailTemplateList = emailService.getAllReport(file);
+                    List<EmailTemplate> emailTemplateList = emailService.getAllReport(file);
 
-                int successCount = 0;
-                int failureCount = 0;
-                for (EmailTemplate emailTemplate : emailTemplateList) {
-                    try {
-                        emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newEmail.getMessage(), emailTemplate.getEmail());
-                        successCount = successCount + 1;
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        failureCount = failureCount + 1;
+                    int successCount = 0;
+                    int failureCount = 0;
+                    for (EmailTemplate emailTemplate : emailTemplateList) {
+                        try {
+                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newEmail.getMessage(), emailTemplate.getEmail());
+                            successCount = successCount + 1;
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            failureCount = failureCount + 1;
+                        }
                     }
+                    model.addAttribute("successcount", successCount);
+                    model.addAttribute("failurecount", failureCount);
+                    System.out.println(emailTemplateList.size());
+                } else {
+                    throw new Exception("File Format Wrong");
                 }
-                model.addAttribute("successcount", successCount);
-                model.addAttribute("failurecount", failureCount);
-                System.out.println(emailTemplateList.size());
 
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                model.addAttribute("error", "File Format Wrong");
             }
         }
 

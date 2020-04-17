@@ -31,7 +31,7 @@ public class EmailServiceImpl {
     private String fromEmailProp;
 
 
-    public List<EmailTemplate> getAllReport(File file) {
+    public List<EmailTemplate> getAllReport(File file) throws Exception{
         List<EmailTemplate> emailTemplatesList = new ArrayList<>();
         HeaderColumnNameTranslateMappingStrategy<EmailTemplate> strategy
                 = new HeaderColumnNameTranslateMappingStrategy<EmailTemplate>();
@@ -39,15 +39,11 @@ public class EmailServiceImpl {
         strategy.setColumnMapping(EmailTemplate.hashMap);
 
         CSVReader csvReader = null;
-        try {
-            csvReader = new CSVReader(new FileReader(file));
-            CsvToBean csvToBean = new CsvToBean();
-            csvToBean.setMappingStrategy(strategy);
-            csvToBean.setCsvReader(csvReader);
-            emailTemplatesList = csvToBean.parse();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        csvReader = new CSVReader(new FileReader(file));
+        CsvToBean csvToBean = new CsvToBean();
+        csvToBean.setMappingStrategy(strategy);
+        csvToBean.setCsvReader(csvReader);
+        emailTemplatesList = csvToBean.parse();
         return emailTemplatesList;
     }
 
@@ -62,15 +58,9 @@ public class EmailServiceImpl {
         helper.setSubject(subject);
         helper.setText(message);
 
-        helper.setPriority(1);
-
         //ClassPathResource classPathResource = new ClassPathResource("Attachment.pdf");
         //helper.addAttachment(classPathResource.getFilename(), classPathResource);
 
-        try {
-            javaMailSender.send(mimeMessage);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        javaMailSender.send(mimeMessage);
     }
 }

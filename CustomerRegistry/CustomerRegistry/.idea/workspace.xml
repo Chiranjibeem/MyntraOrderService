@@ -24,23 +24,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="294" column="16" lean-forward="true" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="173">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1033#1034#0" expanded="true" />
@@ -50,11 +37,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="237" column="18" lean-forward="true" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="18" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,29 +70,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="188" column="75" selection-start-line="188" selection-start-column="75" selection-end-line="188" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
+        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="178" column="68" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="192" column="66" lean-forward="true" selection-start-line="192" selection-start-column="66" selection-end-line="192" selection-end-column="66" />
+            <state relative-caret-position="101">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1581#1582#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Lara Mailer</find>
-      <find>setting</find>
       <find>Settings</find>
       <find>welcome</find>
       <find>h2</find>
@@ -131,7 +124,9 @@
       <find>sec:</find>
       <find>sec:aut</find>
       <find>jan</find>
+      <find>submit</find>
       <find>--</find>
+      <find>Emails Fr</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -151,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/index1.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/WebConfig.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/AllAccountsController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/GroupsController.java" />
@@ -160,13 +153,11 @@
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/PersonalSettingsController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/UsersController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/MailerSetupController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-test.txt" />
         <option value="$PROJECT_DIR$/../../Covid19India/pom.xml" />
         <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/Login.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/RestAccessDeniedHandler.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/UserRole.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/service/CustomerUtil.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/exception/MailExchangeException.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/ForgotPasswordController.java" />
@@ -181,10 +172,7 @@
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/MailExchangeApplication.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/SendNewEmail.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/EmailTemplate.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/DashboardController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/pom.xml" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/accountList.html" />
@@ -196,12 +184,19 @@
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/groupList.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/personalSettings.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendMailList.html" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/userList.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/mailerList.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/addMailer.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/SendInlineImagesInEmail.java" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-csv.csv" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-test.txt" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java" />
       </list>
     </option>
   </component>
@@ -241,7 +236,94 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="configure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -254,12 +336,12 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\repository" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\model" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\templates" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\controller" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\js" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\jquery\dist\dist" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\bootstrap\dist\" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\templates" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static\" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.mailexchange.MailExchange.exception" />
@@ -268,12 +350,12 @@
       <recent name="com.example.mailexchange.MailExchange.model" />
       <recent name="com.example.mailexchange.MailExchange.configure" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\jquery\dist\dist" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\bootstrap\dist\" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\templates" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static\" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\images" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\repository" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\model" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\templates" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,19 +397,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myntra.order.EurekaDiscovery.EurekaDiscoveryApplication" />
-      <module name="EurekaDiscovery" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myntra.order.EurekaDiscovery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MailExchangeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.mailexchange.MailExchange.MailExchangeApplication" />
       <module name="MailExchange" />
@@ -354,13 +423,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SendInlineImagesInEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.mailexchange.MailExchange.configure.SendInlineImagesInEmail" />
+      <module name="MailExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mailexchange.MailExchange.configure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MailExchangeApplication" />
+        <item itemvalue="Application.SendInlineImagesInEmail" />
         <item itemvalue="Application.Covid19IndiaApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.CustomerRegistryApplication" />
-        <item itemvalue="Application.EurekaDiscoveryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -391,7 +473,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.5188216" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.400982" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -406,7 +488,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.23676248" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" weight="0.3600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.3600605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -596,7 +678,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java</url>
-          <line>83</line>
+          <line>87</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
@@ -619,12 +701,6 @@
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java</url>
           <line>39</line>
           <properties />
@@ -635,6 +711,18 @@
           <line>30</line>
           <properties />
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -654,101 +742,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/StaticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/service/CustomerRegistryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.5.RELEASE/spring-aop-5.2.5.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.5.RELEASE/spring-aop-5.2.5.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="748" selection-start-line="748" selection-end-line="748" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.2.5.RELEASE/spring-tx-5.2.5.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="369" column="61" selection-start-line="369" selection-start-column="61" selection-end-line="369" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="35" column="105" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/SendNewEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,23 +814,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -912,18 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,43 +981,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="294" column="16" lean-forward="true" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="192" column="66" lean-forward="true" selection-start-line="192" selection-start-column="66" selection-end-line="192" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,10 +995,144 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/SendInlineImagesInEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/SendNewEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5.jar!/com/sun/mail/smtp/SMTPSendFailedException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5-sources.jar!/javax/mail/SendFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5-sources.jar!/javax/mail/MessagingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-csv.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="188" column="75" selection-start-line="188" selection-start-column="75" selection-end-line="188" selection-end-column="75" />
+        <state relative-caret-position="162">
+          <caret line="183" column="47" selection-start-line="183" selection-start-column="27" selection-end-line="183" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/exception/MailExchangeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="237" column="18" lean-forward="true" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1581#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
         </state>
       </provider>
     </entry>
