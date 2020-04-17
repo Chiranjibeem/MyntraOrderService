@@ -32,7 +32,6 @@ public class LoginController {
         if (loginStatus.equals("SUCCESS")) {
             return "redirect:/";
         }
-        model.addAttribute("loginStatus", "Bad Credentials");
         return "login";
     }
 

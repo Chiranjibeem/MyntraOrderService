@@ -164,21 +164,21 @@ a{color:inherit;text-decoration:none}
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
         <div class="login-form">
             <div class="sign-in-htm">
-                <!--<div th:if="${param.success}">-->
-                    <div class="alert alert-info">
-                        <b><font color="white"><span th:text="${registrationStatus}"/></font></b>
-                    <!--</div>-->
-                </div>
-               <!-- <div th:if="${param.error}">-->
+                <div th:if="${param.success}">
                     <div class="alert alert-info">
                         <b><font color="white"><span th:text="${registrationStatus}"/></font></b>
                     </div>
-             <!--   </div>-->
-               <!-- <div th:if="${param.error}">-->
+                </div>
+               <div th:if="${param.error}">
+                    <div class="alert alert-info">
+                        <b><font color="white"><span th:text="${registrationStatus}"/></font></b>
+                    </div>
+                </div>
+               <div th:if="${param.error}">
                     <div class="alert alert-info">
                         <b><font color="white"><span th:text="${loginStatus}"/></font></b>
                     </div>
-               <!-- </div>-->
+                </div>
                 <div th:if="${param.success}">
                     <div class="alert alert-info">
                         <b><font color="white"><span th:text="${forgotPasswordStatus}"/></font></b>
@@ -186,7 +186,7 @@ a{color:inherit;text-decoration:none}
                 </div>
                 <div th:if="${param.error}">
                     <div class="alert alert-info">
-                        <b><font color="white"><span th:text="${forgotPasswordStatus}"/></font></b>
+                        <b><font color="white"><span>Bad Credentials</span></font></b>
                     </div>
                 </div>
                 <form action="#" th:action="@{/validateLogin}" modelAttribute="signUp" th:object="${signUp}"
