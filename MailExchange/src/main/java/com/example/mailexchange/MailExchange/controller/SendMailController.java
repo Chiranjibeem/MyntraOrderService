@@ -2,7 +2,9 @@ package com.example.mailexchange.MailExchange.controller;
 
 import com.example.mailexchange.MailExchange.configure.EmailServiceImpl;
 import com.example.mailexchange.MailExchange.model.EmailTemplate;
+import com.example.mailexchange.MailExchange.model.ErrorReason;
 import com.example.mailexchange.MailExchange.model.SendNewEmail;
+import com.example.mailexchange.MailExchange.repository.ErrorReasonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,6 +37,9 @@ public class SendMailController {
     private final String UPLOAD_DIR = System.getProperty("user.home") + "/";
     @Autowired
     public EmailServiceImpl emailService;
+
+    @Autowired
+    public ErrorReasonRepository errorReasonRepository;
 
     @RequestMapping("/sendMailList")
     public ModelAndView sendMailList(Model model) {
@@ -70,6 +75,7 @@ public class SendMailController {
                     if (newFormatEmail.startsWith("Dear,")) {
                         flag = true;
                     }
+                    List<ErrorReason> errorReasons = new ArrayList<>();
                     for (EmailTemplate emailTemplate : emailTemplateList) {
                         try {
                             if (flag) {
@@ -80,11 +86,17 @@ public class SendMailController {
                         } catch (Exception e) {
                             e.printStackTrace();
                             failureCount = failureCount + 1;
+                            ErrorReason reason = new ErrorReason();
+                            reason.setFromEmail(newEmail.getSenderEmail());
+                            reason.setToEmail(emailTemplate.getEmail());
+                            reason.setErrorMsg("Error");
+                            errorReasons.add(reason);
                         }
                     }
                     model.addAttribute("successcount", successCount);
                     model.addAttribute("failurecount", failureCount);
                     model.addAttribute("totalcount", totalcount);
+                    errorReasonRepository.saveAll(errorReasons);
                 } else {
                     throw new Exception("File Format Wrong");
                 }

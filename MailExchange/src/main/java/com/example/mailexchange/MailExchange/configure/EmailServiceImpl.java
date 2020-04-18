@@ -50,17 +50,17 @@ public class EmailServiceImpl {
     public void sendEmailWithAttachment(String fromEmail, String personName, String subject, String message, String... toEmail) throws Exception {
 
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
 
         helper.setFrom(fromEmail, personName);
         helper.setTo(toEmail);
         helper.setSubject(subject);
-        helper.setText(message);
+        helper.setText(message,true);
 
         //ClassPathResource classPathResource = new ClassPathResource("Attachment.pdf");
         //helper.addAttachment(classPathResource.getFilename(), classPathResource);
 
         javaMailSender.send(mimeMessage);
+        String messageID = mimeMessage.getMessageID();
     }
 }

@@ -259,7 +259,7 @@
                           <div class="small-box bg-blue">
                               <div class="inner">
                                   <h3><span th:text="${totalcount}"/></h3>
-                                  <p>Sent</p>
+                                  <p>Count</p>
                               </div>
                           </div>
                       </div>
@@ -292,11 +292,13 @@
                     <label for="subject">Subject</label>
                     <input required type="text" th:name="subject" class="form-control" th:id="subject" id="subject"/>
                   </div>
-                  <div class="form-group">
+                  <!--<div class="form-group">
                     <label for="message">Message</label>
                     <p class="help-block">Use Image from Online Image sources.</p>
                     <textarea required id="message" th:name="message" th:id="message" class="form-control" rows="4" placeholder="Enter Message..."></textarea>
-                  </div>
+                  </div>-->
+                  <label for="message">Message</label>
+                  <textarea class="summernote" id="message" th:name="message" th:id="message">Enter Your Message Here</textarea>
                 </div>
               </div>
               <!-- /.box-body -->
@@ -379,7 +381,17 @@ $("#submit").on('click', function(){
 </script>
 <script src="https://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+<link href="css/summernote-bs4.css"></body>
+<script src="js/summernote-bs4.js"></script>
+<script>
+$(document).ready(function() {
+$('.summernote').summernote();
+});
+</script>
 
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
 
 </body>
 </html>
