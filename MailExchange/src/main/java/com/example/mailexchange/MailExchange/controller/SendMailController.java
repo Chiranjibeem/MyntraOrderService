@@ -64,9 +64,18 @@ public class SendMailController {
 
                     int successCount = 0;
                     int failureCount = 0;
+                    int totalcount = emailTemplateList.size();
+                    boolean flag = false;
+                    String newFormatEmail = newEmail.getMessage();
+                    if (newFormatEmail.startsWith("Dear,")) {
+                        flag = true;
+                    }
                     for (EmailTemplate emailTemplate : emailTemplateList) {
                         try {
-                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newEmail.getMessage(), emailTemplate.getEmail());
+                            if (flag) {
+                                newFormatEmail = newFormatEmail.replaceFirst("Dear,", "Dear " + emailTemplate.getName()+",");
+                            }
+                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(),newEmail.getSubject() , newFormatEmail, emailTemplate.getEmail());
                             successCount = successCount + 1;
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -75,7 +84,7 @@ public class SendMailController {
                     }
                     model.addAttribute("successcount", successCount);
                     model.addAttribute("failurecount", failureCount);
-                    System.out.println(emailTemplateList.size());
+                    model.addAttribute("totalcount", totalcount);
                 } else {
                     throw new Exception("File Format Wrong");
                 }

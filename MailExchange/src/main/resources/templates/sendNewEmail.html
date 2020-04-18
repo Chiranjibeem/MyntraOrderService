@@ -254,7 +254,16 @@
                     <input required type="file" id="template" th:name="template" th:id="template" class="form-control" />
                   </div>
                   <div class="row">
-                    <div class="col-lg-6 col-xs-6">
+                      <div class="col-lg-4 col-xs-4">
+                          <!-- small box -->
+                          <div class="small-box bg-blue">
+                              <div class="inner">
+                                  <h3><span th:text="${totalcount}"/></h3>
+                                  <p>Sent</p>
+                              </div>
+                          </div>
+                      </div>
+                    <div class="col-lg-4 col-xs-4">
                       <!-- small box -->
                       <div class="small-box bg-green">
                         <div class="inner">
@@ -263,7 +272,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-xs-6">
+                    <div class="col-lg-4 col-xs-4">
                       <!-- small box -->
                       <div class="small-box bg-red">
                         <div class="inner">
