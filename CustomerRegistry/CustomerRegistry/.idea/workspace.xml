@@ -12,6 +12,7 @@
     <ignored path="$PROJECT_DIR$/../../PaymentRegistry/PaymentRegistry/target/" />
     <ignored path="$PROJECT_DIR$/../../Covid19India/target/" />
     <ignored path="$PROJECT_DIR$/../../MailExchange/target/" />
+    <ignored path="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,117 +23,27 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="301" column="22" lean-forward="true" selection-start-line="301" selection-start-column="22" selection-end-line="301" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#1;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#li#9;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/css/summernote-bs4.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1381#1396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java">
+        <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="379">
+              <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1581#1582#0" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#9;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#9;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#11;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/js/summernote.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/css/summernote.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendMailList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="506" column="17" lean-forward="true" selection-start-line="506" selection-start-column="17" selection-end-line="506" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -150,13 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>accessDeniedHandler</find>
-      <find>bad</find>
-      <find>index.html</find>
-      <find>th</find>
-      <find>comma</find>
-      <find>Email</find>
-      <find>sender E</find>
       <find>action</find>
       <find>more</find>
       <find>th:</find>
@@ -180,6 +84,13 @@
       <find>from</find>
       <find>summerno</find>
       <find>summer</find>
+      <find>Dear,</find>
+      <find>mysq</find>
+      <find>h2</find>
+      <find>post</find>
+      <find>thy</find>
+      <find>50</find>
+      <find>dis</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;&quot;</replace>
@@ -199,26 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/GeneralSettingsController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/PersonalSettingsController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/UsersController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/MailerSetupController.java" />
-        <option value="$PROJECT_DIR$/../../Covid19India/pom.xml" />
-        <option value="$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/configure/OrderRegistrySecurity.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/Login.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/RestAccessDeniedHandler.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/UserRole.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/service/CustomerUtil.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/exception/MailExchangeException.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/ForgotPasswordController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/CustomUserDetails.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/Customer.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/CustomUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/repository/CustomerRegistryRepository.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/repository/RoleRegistryRepository.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/service/CustomerRegistryService.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/SendNewEmail.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/EmailTemplate.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/DashboardController.java" />
@@ -246,10 +137,30 @@
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/MailExchangeApplication.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/repository/ErrorReasonRepository.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/ErrorReason.java" />
-        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendMailList.html" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java" />
         <option value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html" />
+        <option value="$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/UserRole.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/repository/CustomerRegistryRepository.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/repository/RoleRegistryRepository.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/exception/MailExchangeException.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/service/CustomerRegistryService.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/MailExchangeExceptionHandlerResolver.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/RMTExceptionHandlerResolver.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/ForgotPasswordController.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/RMTWebConfig.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/RMTExchangeSecurity.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/CustomUserDetails.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/RuralMassionTrainingApplication.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/Customer.java" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/pom.xml" />
+        <option value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/templates/home.html" />
       </list>
     </option>
   </component>
@@ -262,17 +173,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="MailExchange" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="MailExchange" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -288,96 +189,104 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="configure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -385,52 +294,34 @@
             </path>
             <path>
               <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
+              <item name="RuralMassionTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MailExchange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MailExchange/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\RuralMassionTraining\RuralMassionTraining\src\main\java\com\rmt\program\RuralMassionTraining" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\RuralMassionTraining\RuralMassionTraining\src\main\resources\templates" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\RuralMassionTraining\RuralMassionTraining\src\main\resources\static" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\js" />
       <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\css" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\jquery\dist\dist" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\bootstrap\dist\" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\templates" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.mailexchange.MailExchange.exception" />
@@ -439,12 +330,12 @@
       <recent name="com.example.mailexchange.MailExchange.model" />
       <recent name="com.example.mailexchange.MailExchange.configure" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\js" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\css" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\images" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\repository" />
-      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\java\com\example\mailexchange\MailExchange\model" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\jquery\dist\dist" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\MailExchange\src\main\resources\static\browser-components\bootstrap\dist\" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\templates" />
+      <recent name="E:\Study Material\Git_Repository\MyntraOrderService\OrderService\OrderService\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -459,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MailExchangeApplication">
+  <component name="RunManager" selected="Application.RuralMassionTrainingApplication">
     <configuration name="Covid19IndiaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.covid19.india.Covid19India.Covid19IndiaApplication" />
       <module name="Covid19India" />
@@ -486,12 +377,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myntra.order.OrderService.OrderServiceApplication" />
-      <module name="OrderService" />
+    <configuration name="RuralMassionTrainingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rmt.program.RuralMassionTraining.RuralMassionTrainingApplication" />
+      <module name="RuralMassionTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myntra.order.OrderService.*" />
+          <option name="PATTERN" value="com.rmt.program.RuralMassionTraining.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -527,11 +418,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RuralMassionTrainingApplication" />
         <item itemvalue="Application.MailExchangeApplication" />
         <item itemvalue="Application.SimpleMailer" />
         <item itemvalue="Application.SendInlineImagesInEmail" />
         <item itemvalue="Application.Covid19IndiaApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -550,8 +441,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" weight="0.3600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" weight="0.39409986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -561,7 +453,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.5188216" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" visible="true" weight="0.400982" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4977307" weight="0.400982" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -576,7 +468,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.23676248" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" weight="0.3600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" weight="0.39409986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -860,275 +752,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="1055" selection-start-line="1055" selection-end-line="1055" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="883" selection-start-line="883" selection-end-line="883" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/CustomUserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/accountList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/addAccount.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/addGroup.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/importAccounts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/groupList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/generalSettings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/userList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/addUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/personalSettings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/mailerList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="119" column="63" selection-start-line="119" selection-start-column="63" selection-end-line="119" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/addMailer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="178" column="68" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/SendInlineImagesInEmail.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5.jar!/com/sun/mail/smtp/SMTPSendFailedException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5-sources.jar!/javax/mail/SendFailedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5-sources.jar!/javax/mail/MessagingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/images/sample-csv.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="183" column="47" selection-start-line="183" selection-start-column="27" selection-end-line="183" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/exception/MailExchangeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/CovidExceptionHandlerResolver.java" />
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/SendNewEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/resources/templates/countryDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="203" column="55" selection-start-line="203" selection-start-column="55" selection-end-line="203" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5-sources.jar!/javax/mail/internet/MimeMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="444" column="5" lean-forward="true" selection-start-line="444" selection-start-column="5" selection-end-line="444" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SimpleMailer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1317#1537#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/repository/ErrorReasonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/model/ErrorReason.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1163,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/MailExchangeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/static/js/summernote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1198,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/sendNewEmail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1219,18 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1241,25 +838,322 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/EmailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1381#1396#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/util/SmsSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Covid19India/src/main/java/com/covid19/india/Covid19India/controller/Covid19Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="172" column="31" lean-forward="true" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/controller/SendMailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="171">
+          <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/static/browser-components/iCheck/js/icheck.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/resources/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/CustomUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/EmailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#1381#1396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/GroupsController.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/ErrorReason.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/EmailServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/EmailTemplate.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/repository/ErrorReasonRepository.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/SendMailController.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/UsersController.java" />
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/RMTWebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/RMTExchangeSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/CustomUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/configure/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/MailExchangeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/src/main/java/com/example/mailexchange/MailExchange/configure/MailExchangeSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OrderService/OrderService/src/main/java/com/myntra/order/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/service/CustomerRegistryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/repository/RoleRegistryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/repository/CustomerRegistryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/exception/RMTException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/RMTExceptionHandlerResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/ForgotPasswordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/controller/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/java/com/rmt/program/RuralMassionTraining/RuralMassionTrainingApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MailExchange/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RuralMassionTraining/RuralMassionTraining/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

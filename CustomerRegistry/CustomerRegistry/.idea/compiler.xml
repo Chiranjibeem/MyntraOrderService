@@ -13,6 +13,7 @@
         <module name="MailExchange" />
         <module name="OrderService" />
         <module name="PaymentRegistry" />
+        <module name="RuralMassionTraining" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="MailExchange" target="1.8" />
       <module name="OrderService" target="1.8" />
       <module name="PaymentRegistry" target="1.8" />
+      <module name="RuralMassionTraining" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -34,6 +36,7 @@
       <module name="MailExchange" options="-parameters" />
       <module name="OrderService" options="-parameters" />
       <module name="PaymentRegistry" options="-parameters" />
+      <module name="RuralMassionTraining" options="-parameters" />
     </option>
   </component>
 </project>

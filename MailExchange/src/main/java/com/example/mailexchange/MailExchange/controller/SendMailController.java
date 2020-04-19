@@ -72,7 +72,7 @@ public class SendMailController {
                     int totalcount = emailTemplateList.size();
                     boolean flag = false;
                     String newFormatEmail = newEmail.getMessage();
-                    if (newFormatEmail.startsWith("Dear,")) {
+                    if (newFormatEmail.contains("Dear,")) {
                         flag = true;
                     }
                     List<ErrorReason> errorReasons = new ArrayList<>();
