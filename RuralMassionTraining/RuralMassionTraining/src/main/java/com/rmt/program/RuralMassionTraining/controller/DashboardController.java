@@ -16,6 +16,11 @@ public class DashboardController {
     @Autowired
     DistPartnerRepository distPartnerRepository;
 
+    @GetMapping("/home")
+    public ModelAndView homePage(Model model){
+        return dashBoardPage(model);
+    }
+
     @GetMapping("/")
     public ModelAndView dashBoardPage(Model model){
         List<Object[]> traningPartnerList = distPartnerRepository.getDistrictPartnerDetails();
