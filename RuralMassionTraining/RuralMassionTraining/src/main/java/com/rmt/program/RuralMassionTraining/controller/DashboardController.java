@@ -1,6 +1,5 @@
 package com.rmt.program.RuralMassionTraining.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rmt.program.RuralMassionTraining.model.DistTraningPartner;
 import com.rmt.program.RuralMassionTraining.repository.DistPartnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
