@@ -157,7 +157,7 @@
 
         <section class="content">
             <div class="row">
-                <div class="col-lg-3 col-xs-6">
+                <div class="col-lg-3 col-xs-3">
                     <div class="small-box bg-green">
                         <div class="inner">
                             <h3><span th:utext="${totalDistrictCount}" /></h3>
@@ -166,6 +166,7 @@
                         <div class="icon">
                             <i class="fa fa-paper-plane-o"></i>
                         </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -181,27 +182,37 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
-                    <div class="small-box bg-aqua">
-                        <div class="inner">
-                            <h3>50</h3>
-                            <p>Ongoing Batches RPL</p>
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <h3>3500</h3>
+                                <p>Passed and Certified Candidates</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-server"></i>
+                            </div>
+                            <a href="/#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-server"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-purple">
                         <div class="inner">
-                            <h3>40</h3>
-                            <p>Ongoing Batches - STT</p>
+                            <h3>6778</h3>
+                            <p>House Tagged</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-users"></i>
                         </div>
-                        <a href="/#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="#houseTagged" class="btn btn-primary" data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="houseTagged">
+                            More info<i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                        <div class="collapse" id="houseTagged">
+                            <div class="card card-body">
+                                <h8>Plinth Level : 10</h8>
+                                <h8>Lintel Level : 10</h8><br>
+                                <h8>Roof Level   : 10</h8>
+                                <h8>Completed    : 10</h8>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -213,6 +224,7 @@
                         <div class="icon">
                             <i class="fa fa-paper-plane-o"></i>
                         </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
@@ -240,16 +252,24 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
-                    <div class="small-box bg-purple">
-                        <div class="inner">
-                            <h3>3500</h3>
-                            <p>Passed and Certified Candidates</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <a href="/#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="small-box bg-purple">
+                    <div class="inner">
+                        <h3>100</h3>
+                        <p>Ongoing Batches</p>
                     </div>
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <a href="#ongoingBatch" class="btn btn-primary" data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="ongoingBatch">
+                        More info<i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                    <div class="collapse" id="ongoingBatch">
+                        <div class="card card-body">
+                            <h8>RPL(10 Days) : 10</h8>
+                            <h8>STT(45 Days) : 10</h8>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-green">
@@ -299,7 +319,6 @@
                         <a href="/#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -8010,7 +8029,7 @@
             </div>
             <div class="row text-center">
                 <h2>Welcome to RMT!</h2>
-                <h6>Developed By Chiranjibee</h6>
+                <h6>Developed By Chiranjibee & Rajesh</h6>
             </div>
         </section>
 
