@@ -9,6 +9,8 @@ public class CoronaStatus {
 
     public String state;
 
+    public String statecode;
+
     public List<DistrictData> getDistrictData() {
         return districtData;
     }
@@ -23,6 +25,14 @@ public class CoronaStatus {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public String getStatecode() {
+        return statecode;
+    }
+
+    public void setStatecode(String statecode) {
+        this.statecode = statecode;
     }
 
     @Override

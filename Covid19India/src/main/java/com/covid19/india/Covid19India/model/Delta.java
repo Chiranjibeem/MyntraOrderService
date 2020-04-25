@@ -4,19 +4,31 @@ public class Delta
 {
     private String confirmed;
 
-    public String getConfirmed ()
-    {
+    private String deceased;
+
+    private String recovered;
+
+    public String getConfirmed() {
         return confirmed;
     }
 
-    public void setConfirmed (String confirmed)
-    {
+    public void setConfirmed(String confirmed) {
         this.confirmed = confirmed;
     }
 
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [confirmed = "+confirmed+"]";
+    public String getDeceased() {
+        return deceased;
+    }
+
+    public void setDeceased(String deceased) {
+        this.deceased = deceased;
+    }
+
+    public String getRecovered() {
+        return recovered;
+    }
+
+    public void setRecovered(String recovered) {
+        this.recovered = recovered;
     }
 }
