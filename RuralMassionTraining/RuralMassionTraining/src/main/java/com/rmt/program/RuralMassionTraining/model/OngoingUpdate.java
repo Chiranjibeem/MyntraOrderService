@@ -1,18 +1,77 @@
 package com.rmt.program.RuralMassionTraining.model;
 
+import javax.persistence.*;
+
+@Entity(name="RM_ONGOING_UPDATE")
 public class OngoingUpdate {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="ONGOING_UPD_ID")
+    private int ongoingUpdateId;
+    @Column(name="PARTNER")
     private String partner;
+    @Column(name="DISTRICT")
     private String district;
+    @Column(name="DATE_TIME")
     private String dateAndTime;
-    private String batchCommenced;
+    @Column(name="BATCH_COMMENCED")
+    private int batchCommenced;
+    @Column(name="BATCH_TYPE")
     private String batchType;
-    private String enrolledCandidates;
-    private String batchesCompleted;
-    private String houseTagged;
-    private String plinthLevel;
-    private String lintelLevel;
-    private String roofLevel;
-    private String completedLevel;
+    @Column(name="ENROLLED_CANDIDATES")
+    private int enrolledCandidates;
+    @Column(name="BATCHES_COMPLETED")
+    private int batchesCompleted;
+    @Column(name="HOUSE_TAGGED")
+    private int houseTagged;
+    @Column(name="PLINTH_LEVEL")
+    private int plinthLevel;
+    @Column(name ="LINTEL_LEVEl")
+    private int lintelLevel;
+    @Column(name="ROOF_LEVEL")
+    private int roofLevel;
+    @Column(name="COMPLETED_LEVEL")
+    private int completedLevel;
+    @Transient
+    private int ongoingBatchUpdate;
+    @Transient
+    private int RRL;
+    @Transient
+    private int STT;
+
+    public int getRRL() {
+        return RRL;
+    }
+
+    public void setRRL(int RRL) {
+        this.RRL = RRL;
+    }
+
+    public int getSTT() {
+        return STT;
+    }
+
+    public void setSTT(int STT) {
+        this.STT = STT;
+    }
+
+    public OngoingUpdate(){}
+
+    public int getOngoingBatchUpdate() {
+        return ongoingBatchUpdate;
+    }
+
+    public void setOngoingBatchUpdate(int ongoingBatchUpdate) {
+        this.ongoingBatchUpdate = ongoingBatchUpdate;
+    }
+
+    public int getOngoingUpdateId() {
+        return ongoingUpdateId;
+    }
+
+    public void setOngoingUpdateId(int ongoingUpdateId) {
+        this.ongoingUpdateId = ongoingUpdateId;
+    }
 
     public String getPartner() {
         return partner;
@@ -38,11 +97,11 @@ public class OngoingUpdate {
         this.dateAndTime = dateAndTime;
     }
 
-    public String getBatchCommenced() {
+    public int getBatchCommenced() {
         return batchCommenced;
     }
 
-    public void setBatchCommenced(String batchCommenced) {
+    public void setBatchCommenced(int batchCommenced) {
         this.batchCommenced = batchCommenced;
     }
 
@@ -54,59 +113,59 @@ public class OngoingUpdate {
         this.batchType = batchType;
     }
 
-    public String getEnrolledCandidates() {
+    public int getEnrolledCandidates() {
         return enrolledCandidates;
     }
 
-    public void setEnrolledCandidates(String enrolledCandidates) {
+    public void setEnrolledCandidates(int enrolledCandidates) {
         this.enrolledCandidates = enrolledCandidates;
     }
 
-    public String getBatchesCompleted() {
+    public int getBatchesCompleted() {
         return batchesCompleted;
     }
 
-    public void setBatchesCompleted(String batchesCompleted) {
+    public void setBatchesCompleted(int batchesCompleted) {
         this.batchesCompleted = batchesCompleted;
     }
 
-    public String getHouseTagged() {
+    public int getHouseTagged() {
         return houseTagged;
     }
 
-    public void setHouseTagged(String houseTagged) {
+    public void setHouseTagged(int houseTagged) {
         this.houseTagged = houseTagged;
     }
 
-    public String getPlinthLevel() {
+    public int getPlinthLevel() {
         return plinthLevel;
     }
 
-    public void setPlinthLevel(String plinthLevel) {
+    public void setPlinthLevel(int plinthLevel) {
         this.plinthLevel = plinthLevel;
     }
 
-    public String getLintelLevel() {
+    public int getLintelLevel() {
         return lintelLevel;
     }
 
-    public void setLintelLevel(String lintelLevel) {
+    public void setLintelLevel(int lintelLevel) {
         this.lintelLevel = lintelLevel;
     }
 
-    public String getRoofLevel() {
+    public int getRoofLevel() {
         return roofLevel;
     }
 
-    public void setRoofLevel(String roofLevel) {
+    public void setRoofLevel(int roofLevel) {
         this.roofLevel = roofLevel;
     }
 
-    public String getCompletedLevel() {
+    public int getCompletedLevel() {
         return completedLevel;
     }
 
-    public void setCompletedLevel(String completedLevel) {
+    public void setCompletedLevel(int completedLevel) {
         this.completedLevel = completedLevel;
     }
 }

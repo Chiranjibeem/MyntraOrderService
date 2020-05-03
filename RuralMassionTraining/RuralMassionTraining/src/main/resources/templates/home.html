@@ -172,7 +172,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-yellow">
                         <div class="inner">
-                            <h3>15999</h3>
+                            <h3><span th:utext="${ongoingUpdtae.enrolledCandidates}" /></h3>
                             <p>Enrolled Candidates - Offline</p>
                         </div>
                         <div class="icon">
@@ -196,7 +196,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-purple">
                         <div class="inner">
-                            <h3>6778</h3>
+                            <h3><span th:utext="${ongoingUpdtae.houseTagged}" /></h3>
                             <p>House Tagged</p>
                         </div>
                         <div class="icon">
@@ -207,10 +207,10 @@
                         </a>
                         <div class="collapse" id="houseTagged">
                             <div class="card card-body">
-                                <h8>Plinth Level : 10</h8>
-                                <h8>Lintel Level : 10</h8><br>
-                                <h8>Roof Level   : 10</h8>
-                                <h8>Completed    : 10</h8>
+                                <h8>Plinth Level : <span th:utext="${ongoingUpdtae.plinthLevel}" /></h8>
+                                <h8>Lintel Level : <span th:utext="${ongoingUpdtae.lintelLevel}" /></h8><br>
+                                <h8>Roof Level   : <span th:utext="${ongoingUpdtae.roofLevel}" /></h8>
+                                <h8>Completed    : <span th:utext="${ongoingUpdtae.completedLevel}" /></h8>
                             </div>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                 <div class="col-lg-3 col-xs-6">
                 <div class="small-box bg-purple">
                     <div class="inner">
-                        <h3>100</h3>
+                        <h3><span th:utext="${ongoingUpdtae.ongoingBatchUpdate}" /></h3>
                         <p>Ongoing Batches</p>
                     </div>
                     <div class="icon">
@@ -265,8 +265,8 @@
                     </a>
                     <div class="collapse" id="ongoingBatch">
                         <div class="card card-body">
-                            <h8>RPL(10 Days) : 10</h8>
-                            <h8>STT(45 Days) : 10</h8>
+                            <h8>RPL(10 Days) : <span th:utext="${ongoingUpdtae.RRL}" /></h8>
+                            <h8>STT(45 Days) : <span th:utext="${ongoingUpdtae.STT}" /></h8>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-green">
                         <div class="inner">
-                            <h3>533</h3>
+                            <h3><span th:utext="${ongoingUpdtae.batchCommenced}" /></h3>
                             <p>Batches Commenced</p>
                         </div>
                         <div class="icon">
@@ -310,7 +310,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-purple">
                         <div class="inner">
-                            <h3>350</h3>
+                            <h3><span th:utext="${ongoingUpdtae.batchesCompleted}" /></h3>
                             <p>Batches Completed</p>
                         </div>
                         <div class="icon">

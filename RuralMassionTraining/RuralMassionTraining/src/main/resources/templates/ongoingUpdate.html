@@ -156,13 +156,14 @@
         </section>
 
         <section class="content">
-            <form method="POST" action="#" th:action="@{/ongoingUpdate}" modelAttribute="ongoingUpdate" th:object="${ongoingUpdate}"
+            <form method="GET" action="#" th:action="@{/ongoingUpdate}" modelAttribute="ongoingUpdate" th:object="${ongoingUpdate}"
                   accept-charset="UTF-8" class="" enctype="multipart/form-data">
                 <div class="box-body">
                     <div class="col-md-4 borderRight">
                         <div class="form-group">
                             <label for="partner">Training Partner</label>
-                            <select required th:id="partner" th:name="partner" id="partner" multiple="multiple" class="form-control select2">
+                            <select required th:id="partner" th:name="partner" id="partner"  class="form-control select2">
+                                <option selected="selected"></option>
                                 <option th:each="partner : ${trainingPartnerList}"
                                         th:value="${partner}"
                                         th:utext="${partner}"/>
@@ -170,40 +171,83 @@
                         </div>
                         <div class="form-group">
                             <label for="district">District</label>
-                            <select required th:id="district" th:name="district" id="district" multiple="multiple" class="form-control select2">
+                            <select required th:id="district" th:name="district" id="district"  class="form-control select2">
+                                <option selected="selected"></option>
                                 <option th:each="district : ${districtList}"
                                         th:value="${district}"
                                         th:utext="${district}"/>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="partner">Date and Time</label>
+                            <label for="dateAndTime">Date and Time</label>
                             <div class='input-group date' id='datetimepicker1'>
-                                <input type='text' class="form-control" />
+                                <input required type='text' id = "dateAndTime" class="form-control" th:id="dateAndTime" th:name="dateAndTime"/>
                                 <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 borderRight">
                         <div class="form-group">
-                            <label for="batchCommenced">No of Batches Commenced</label>
-                            <input required type="text" th:name="batchCommenced" class="form-control" th:id="batchCommenced" id="batchCommenced"/>
+                            <label for="batchCommenced">No of Batched Commenced Today</label>
+                            <select required th:id="batchType" th:name="batchCommenced" id="batchCommenced"  class="form-control select2">
+                                <option selected="selected"></option>
+                                <option th:value="'1'" th:text="1"></option>
+                                <option th:value="'2'" th:text="2"></option>
+                                <option th:value="'3'" th:text="3"></option>
+                                <option th:value="'4'" th:text="4"></option>
+                                <option th:value="'5'" th:text="5"></option>
+                                <option th:value="'6'" th:text="6"></option>
+                                <option th:value="'7'" th:text="7"></option>
+                                <option th:value="'8'" th:text="8"></option>
+                                <option th:value="'9'" th:text="9"></option>
+                                <option th:value="'10'" th:text="10"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="batchType">Batch Type</label>
+                            <select required th:id="batchType" th:name="batchType" id="batchType"  class="form-control select2">
+                                <option selected="selected"></option>
+                                <option th:value="'RPL'" th:text="RPL"></option>
+                                <option th:value="'STT'" th:text="STT"></option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="enrolledCandidates">Total Enrolled Candidates</label>
-                            <input required type="text" th:name="enrolledCandidates" class="form-control" th:id="enrolledCandidates" id="enrolledCandidates"/>
+                            <input required type="number" th:name="enrolledCandidates" class="form-control" th:id="enrolledCandidates" id="enrolledCandidates"/>
                         </div>
                         <div class="form-group">
-                            <label for="certifiedTrainers">Total No of Certified Trainers</label>
-                            <input required type="text" th:name="certifiedTrainers" class="form-control" th:id="certifiedTrainers" id="certifiedTrainers"/>
+                            <label for="batchesCompleted">No of Batches Completed Today</label>
+                            <input required type="number" th:name="batchesCompleted" class="form-control" th:id="batchesCompleted" id="batchesCompleted"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="houseTagged">House Tagged</label>
+                            <input required type="number" th:name="houseTagged" class="form-control" th:id="houseTagged" id="houseTagged"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="plinthLevel">Plinth Level</label>
+                            <input required type="number" th:name="plinthLevel" class="form-control" th:id="plinthLevel" id="plinthLevel"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lintelLevel">Lintel Level</label>
+                            <input required type="number" th:name="lintelLevel" class="form-control" th:id="lintelLevel" id="lintelLevel"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="roofLevel">Roof Level</label>
+                            <input required type="number" th:name="roofLevel" class="form-control" th:id="roofLevel" id="roofLevel"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="completedLevel">Completed</label>
+                            <input required type="number" th:name="completedLevel" class="form-control" th:id="completedLevel" id="completedLevel"/>
                         </div>
                     </div>
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer text-center">
-                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Send Mail</button>
+                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
             <div class="row text-center">
@@ -274,7 +318,12 @@
             $(function () {
                 $('#datetimepicker1').datetimepicker();
             });
-        </script>
+</script>
 
+<script>
+    $(".js-example-tags").select2({
+  tags: true
+});
+</script>
 </body>
 </html>
