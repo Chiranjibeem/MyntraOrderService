@@ -254,7 +254,7 @@
                     <input required type="file" id="template" th:name="template" th:id="template" class="form-control" />
                   </div>
                   <div class="row">
-                      <div class="col-lg-4 col-xs-4">
+                      <div class="col-lg-3 col-xs-3">
                           <!-- small box -->
                           <div class="small-box bg-blue">
                               <div class="inner">
@@ -263,7 +263,7 @@
                               </div>
                           </div>
                       </div>
-                    <div class="col-lg-4 col-xs-4">
+                    <div class="col-lg-3 col-xs-3">
                       <!-- small box -->
                       <div class="small-box bg-green">
                         <div class="inner">
@@ -272,12 +272,21 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-xs-4">
+                    <div class="col-lg-3 col-xs-3">
                       <!-- small box -->
                       <div class="small-box bg-red">
                         <div class="inner">
                           <h3><span th:text="${failurecount}"/></h3>
                           <p>Failed</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-3">
+                      <!-- small box -->
+                      <div class="small-box bg-orange">
+                        <div class="inner">
+                          <h3><span th:text="${fileCreated}"/></h3>
+                          <p><a id="statusReport" style="color:white;" th:href="${fileName}" download>Status File</a></p>
                         </div>
                       </div>
                     </div>

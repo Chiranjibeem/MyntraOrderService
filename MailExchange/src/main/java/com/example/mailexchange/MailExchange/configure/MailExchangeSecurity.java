@@ -33,10 +33,11 @@ public class MailExchangeSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
         http.headers().frameOptions().sameOrigin();
-        http.authorizeRequests()
+/*        http.authorizeRequests()
                 .anyRequest().authenticated().and().formLogin()
                 .usernameParameter("custUserName").passwordParameter("custUserPassword").loginPage("/validateLogin").loginProcessingUrl("/validateLogin").permitAll()
-                .and().logout().logoutSuccessUrl("/validateLogin").invalidateHttpSession(true);
+                .and().logout().logoutSuccessUrl("/validateLogin").invalidateHttpSession(true);*/
+http.authorizeRequests().anyRequest().permitAll().and().logout().logoutSuccessUrl("/validateLogin").invalidateHttpSession(true);
     }
 
     @Override

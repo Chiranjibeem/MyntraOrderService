@@ -1,6 +1,7 @@
 package com.example.mailexchange.MailExchange.controller;
 
 import com.example.mailexchange.MailExchange.configure.EmailServiceImpl;
+import com.example.mailexchange.MailExchange.model.EmailStatus;
 import com.example.mailexchange.MailExchange.model.EmailTemplate;
 import com.example.mailexchange.MailExchange.model.ErrorReason;
 import com.example.mailexchange.MailExchange.model.SendNewEmail;
@@ -8,6 +9,7 @@ import com.example.mailexchange.MailExchange.repository.ErrorReasonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -35,6 +37,7 @@ import java.util.List;
 public class SendMailController {
 
     private final String UPLOAD_DIR = System.getProperty("user.home") + "/";
+    private final String DOWNLOAD_DIR = System.getProperty("user.dir") + "/";
     @Autowired
     public EmailServiceImpl emailService;
 
@@ -56,6 +59,7 @@ public class SendMailController {
     @RequestMapping("/sendNewEmail")
     public ModelAndView sendNewEmail(@ModelAttribute("newEmail") SendNewEmail newEmail, BindingResult result, Model model) {
         if (newEmail != null && newEmail.getTemplate() == null) {
+            model.addAttribute("fileName", "images/status-report.csv");
             return new ModelAndView("sendNewEmail");
         } else {
             String fileName = StringUtils.cleanPath(newEmail.getTemplate().getOriginalFilename());
@@ -76,12 +80,16 @@ public class SendMailController {
                         flag = true;
                     }
                     List<ErrorReason> errorReasons = new ArrayList<>();
+                    List<EmailStatus> emailStatuses = new ArrayList<>();
+                    System.out.println();
+                    System.out.println("###########################################");
                     for (EmailTemplate emailTemplate : emailTemplateList) {
                         try {
                             if (flag) {
-                                newFormatEmail = newFormatEmail.replaceFirst("Dear,", "Dear " + emailTemplate.getName()+",");
+                                newFormatEmail = newFormatEmail.replaceFirst("Dear,", "Dear " + emailTemplate.getName() + ",");
                             }
-                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(),newEmail.getSubject() , newFormatEmail, emailTemplate.getEmail());
+                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newFormatEmail, emailTemplate.getEmail());
+                            System.out.println("EMail Sent Success : " + emailTemplate.getEmail());
                             successCount = successCount + 1;
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -91,12 +99,35 @@ public class SendMailController {
                             reason.setToEmail(emailTemplate.getEmail());
                             reason.setErrorMsg("Error");
                             errorReasons.add(reason);
+                            System.out.println("EMail Sent Failed : " + emailTemplate.getEmail());
+
+                            EmailStatus status = new EmailStatus();
+                            status.setEmail(emailTemplate.getEmail());
+                            status.setStatus("Failed");
+                            emailStatuses.add(status);
                         }
                     }
+                    System.out.println("###########################################");
+                    System.out.println();
                     model.addAttribute("successcount", successCount);
                     model.addAttribute("failurecount", failureCount);
                     model.addAttribute("totalcount", totalcount);
-                    errorReasonRepository.saveAll(errorReasons);
+                    if (!CollectionUtils.isEmpty(errorReasons)) {
+                        errorReasonRepository.saveAll(errorReasons);
+                    }
+                    if (!CollectionUtils.isEmpty(emailStatuses)) {
+                        boolean fileCreated = emailService.generateStatusFile(emailStatuses, UPLOAD_DIR+fileName);
+                        if (fileCreated) {
+                            model.addAttribute("fileName", UPLOAD_DIR+fileName);
+                            model.addAttribute("fileCreated", "Y");
+                        } else {
+                            model.addAttribute("fileName", "images/status-report.csv");
+                            model.addAttribute("fileCreated", "N");
+                        }
+                    } else {
+                        model.addAttribute("fileCreated", "N");
+                        model.addAttribute("fileName", "images/status-report.csv");
+                    }
                 } else {
                     throw new Exception("File Format Wrong");
                 }
