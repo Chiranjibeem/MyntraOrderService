@@ -59,7 +59,6 @@ public class SendMailController {
     @RequestMapping("/sendNewEmail")
     public ModelAndView sendNewEmail(@ModelAttribute("newEmail") SendNewEmail newEmail, BindingResult result, Model model) {
         if (newEmail != null && newEmail.getTemplate() == null) {
-            model.addAttribute("fileName", "images/status-report.csv");
             return new ModelAndView("sendNewEmail");
         } else {
             String fileName = StringUtils.cleanPath(newEmail.getTemplate().getOriginalFilename());
@@ -116,17 +115,14 @@ public class SendMailController {
                         errorReasonRepository.saveAll(errorReasons);
                     }
                     if (!CollectionUtils.isEmpty(emailStatuses)) {
-                        boolean fileCreated = emailService.generateStatusFile(emailStatuses, UPLOAD_DIR+fileName);
+                        boolean fileCreated = emailService.generateStatusFile(emailStatuses, DOWNLOAD_DIR+fileName);
                         if (fileCreated) {
-                            model.addAttribute("fileName", UPLOAD_DIR+fileName);
                             model.addAttribute("fileCreated", "Y");
                         } else {
-                            model.addAttribute("fileName", "images/status-report.csv");
                             model.addAttribute("fileCreated", "N");
                         }
                     } else {
                         model.addAttribute("fileCreated", "N");
-                        model.addAttribute("fileName", "images/status-report.csv");
                     }
                 } else {
                     throw new Exception("File Format Wrong");
