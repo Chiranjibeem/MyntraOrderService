@@ -3,6 +3,7 @@ package com.example.mailexchange.MailExchange.configure;
 import com.example.mailexchange.MailExchange.model.EmailStatus;
 import com.example.mailexchange.MailExchange.model.EmailTemplate;
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 import com.opencsv.bean.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +23,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Configuration
 public class EmailServiceImpl {
@@ -34,10 +36,11 @@ public class EmailServiceImpl {
 
     public boolean generateStatusFile(List<EmailStatus> statuses, String fileName) {
         FileWriter fileWriter = null;
+        CSVWriter writer = null;
         File file = null;
         try {
             if (fileName != null) {
-                file = new File(fileName.replaceAll("%20"," "));
+                file = new File(fileName.replaceAll("%20", " "));
                 if (!file.exists()) {
                     file.createNewFile();
                     file.canRead();
@@ -46,20 +49,23 @@ public class EmailServiceImpl {
                 }
             }
             fileWriter = new FileWriter(file, false);
-            ColumnPositionMappingStrategy mappingStrategy =
-                    new ColumnPositionMappingStrategy();
-            mappingStrategy.setType(EmailStatus.class);
-            String[] columns = new String[]{"email", "status"};
-            mappingStrategy.setColumnMapping(columns);
-            StatefulBeanToCsvBuilder<EmailStatus> builder =
-                    new StatefulBeanToCsvBuilder(fileWriter);
-            StatefulBeanToCsv beanWriter =
-                    builder.withMappingStrategy(mappingStrategy).build();
-            beanWriter.write(statuses);
+            List<String[]> data = statuses.stream().map(i -> new String[]{i.getEmail(), i.getEmail(), i.getStatus()}).collect(Collectors.toList());
+            writer = new CSVWriter(fileWriter, ',',
+                    CSVWriter.NO_QUOTE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_LINE_END);
+            writer.writeAll(data);
             return true;
         } catch (Exception e) {
             return false;
         } finally {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (Exception e) {
+
+                }
+            }
             if (fileWriter != null) {
                 try {
                     fileWriter.close();

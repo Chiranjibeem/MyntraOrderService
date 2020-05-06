@@ -80,6 +80,11 @@ public class SendMailController {
                     }
                     List<ErrorReason> errorReasons = new ArrayList<>();
                     List<EmailStatus> emailStatuses = new ArrayList<>();
+                    EmailStatus header = new EmailStatus();
+                    header.setEmail("email");
+                    header.setName("name");
+                    header.setStatus("status");
+                    emailStatuses.add(header);
                     System.out.println();
                     System.out.println("###########################################");
                     for (EmailTemplate emailTemplate : emailTemplateList) {
@@ -102,6 +107,7 @@ public class SendMailController {
 
                             EmailStatus status = new EmailStatus();
                             status.setEmail(emailTemplate.getEmail());
+                            status.setName(emailTemplate.getName());
                             status.setStatus("Failed");
                             emailStatuses.add(status);
                         }
