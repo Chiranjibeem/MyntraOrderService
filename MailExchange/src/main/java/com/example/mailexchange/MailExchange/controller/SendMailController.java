@@ -1,12 +1,14 @@
 package com.example.mailexchange.MailExchange.controller;
 
 import com.example.mailexchange.MailExchange.configure.EmailServiceImpl;
+import com.example.mailexchange.MailExchange.configure.EmailTaskExecutor;
 import com.example.mailexchange.MailExchange.model.EmailStatus;
 import com.example.mailexchange.MailExchange.model.EmailTemplate;
 import com.example.mailexchange.MailExchange.model.ErrorReason;
 import com.example.mailexchange.MailExchange.model.SendNewEmail;
 import com.example.mailexchange.MailExchange.repository.ErrorReasonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
@@ -32,6 +34,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
+import java.util.stream.Collectors;
 
 @Controller
 public class SendMailController {
@@ -43,6 +49,9 @@ public class SendMailController {
 
     @Autowired
     public ErrorReasonRepository errorReasonRepository;
+
+    @Autowired
+    private ExecutorService executorService;
 
     @RequestMapping("/sendMailList")
     public ModelAndView sendMailList(Model model) {
@@ -56,11 +65,38 @@ public class SendMailController {
         return strDate;
     }
 
+    public List<EmailStatus> sendEmailInvokeAll(List<EmailTaskExecutor> emailTaskExecutorList) throws Exception {
+        List<Future<EmailStatus>> emailResponses = executorService.invokeAll(emailTaskExecutorList);
+        if (!CollectionUtils.isEmpty(emailResponses)) {
+            List<EmailStatus> successResponse = emailResponses.stream().map(sResponse -> {
+                try {
+                    EmailStatus emailStatus = sResponse.get();
+                    return emailStatus;
+                } catch (InterruptedException i) {
+
+                } catch (ExecutionException e) {
+
+                }
+                return null;
+            }).collect(Collectors.toList());
+            return successResponse;
+
+        }
+        return null;
+    }
+
     @RequestMapping("/sendNewEmail")
-    public ModelAndView sendNewEmail(@ModelAttribute("newEmail") SendNewEmail newEmail, BindingResult result, Model model) {
-        if (newEmail != null && newEmail.getTemplate() == null) {
+    public ModelAndView sendNewEmail(@ModelAttribute("newEmail") SendNewEmail newEmail1, BindingResult result, Model model) {
+        if (newEmail1 != null && newEmail1.getTemplate() == null) {
             return new ModelAndView("sendNewEmail");
         } else {
+            SendNewEmail newEmail = new SendNewEmail();
+            newEmail.setSenderEmail(newEmail1.getSenderEmail().trim());
+            newEmail.setSenderName(newEmail1.getSenderName().trim());
+            newEmail.setSubject(newEmail1.getSubject().trim());
+            newEmail.setMessage(newEmail1.getMessage());
+            newEmail.setTemplate(newEmail1.getTemplate());
+
             String fileName = StringUtils.cleanPath(newEmail.getTemplate().getOriginalFilename());
             try {
                 if (fileName.toUpperCase().endsWith("CSV") || fileName.toUpperCase().endsWith("TXT")) {
@@ -68,6 +104,7 @@ public class SendMailController {
                     Files.copy(newEmail.getTemplate().getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
                     File file = path.toFile();
 
+                    List<ErrorReason> errorReasons = new ArrayList<>();
                     List<EmailTemplate> emailTemplateList = emailService.getAllReport(file);
 
                     int successCount = 0;
@@ -78,57 +115,54 @@ public class SendMailController {
                     if (newFormatEmail.contains("Dear,")) {
                         flag = true;
                     }
-                    List<ErrorReason> errorReasons = new ArrayList<>();
-                    List<EmailStatus> emailStatuses = new ArrayList<>();
-                    EmailStatus header = new EmailStatus();
-                    header.setEmail("email");
-                    header.setName("name");
-                    header.setStatus("status");
-                    emailStatuses.add(header);
-                    System.out.println();
-                    System.out.println("###########################################");
+                    List<EmailStatus> failureResponse = new ArrayList<>();
+                    List<EmailTaskExecutor> emailTaskExecutorList = new ArrayList<>();
+                    EmailStatus header = new EmailStatus("email", "name", "status");
                     for (EmailTemplate emailTemplate : emailTemplateList) {
-                        try {
-                            if (flag) {
-                                newFormatEmail = newFormatEmail.replaceFirst("Dear,", "Dear " + emailTemplate.getName() + ",");
-                            }
-                            emailService.sendEmailWithAttachment(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newFormatEmail, emailTemplate.getEmail());
-                            System.out.println("EMail Sent Success : " + emailTemplate.getEmail());
-                            successCount = successCount + 1;
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            failureCount = failureCount + 1;
-                            ErrorReason reason = new ErrorReason();
-                            reason.setFromEmail(newEmail.getSenderEmail());
-                            reason.setToEmail(emailTemplate.getEmail());
-                            reason.setErrorMsg("Error");
-                            errorReasons.add(reason);
-                            System.out.println("EMail Sent Failed : " + emailTemplate.getEmail());
+                        if (flag) {
+                            newFormatEmail = newFormatEmail.replaceFirst("Dear,", "Dear " + emailTemplate.getName() + ",");
+                        }
+                        EmailTaskExecutor emailTaskExecutor = new EmailTaskExecutor(newEmail.getSenderEmail(), newEmail.getSenderName(), newEmail.getSubject(), newFormatEmail, emailTemplate.getEmail().trim(), emailTemplate.getName().trim(),emailService);
+                        emailTaskExecutorList.add(emailTaskExecutor);
+                    }
 
-                            EmailStatus status = new EmailStatus();
-                            status.setEmail(emailTemplate.getEmail());
-                            status.setName(emailTemplate.getName());
-                            status.setStatus("Failed");
-                            emailStatuses.add(status);
+                    if (!CollectionUtils.isEmpty(emailTaskExecutorList)) {
+                        try {
+                            List<EmailStatus> emailStatusList = sendEmailInvokeAll(emailTaskExecutorList);
+                            List<EmailStatus> successResponse = emailStatusList.stream().filter(response -> "SUCCESS".equalsIgnoreCase(response.getStatus())).collect(Collectors.toList());
+                            failureResponse = emailStatusList.stream().filter(response -> !"SUCCESS".equalsIgnoreCase(response.getStatus())).collect(Collectors.toList());
+                            if (!CollectionUtils.isEmpty(successResponse)) {
+                                successCount = successResponse.size();
+                            }
+                            if (!CollectionUtils.isEmpty(failureResponse)) {
+                                failureCount = failureResponse.size();
+                                errorReasons = failureResponse.stream().map(failure -> {
+                                    ErrorReason reason = new ErrorReason();
+                                    reason.setFromEmail(failure.getEmail());
+                                    reason.setToEmail(failure.getName());
+                                    reason.setErrorMsg("Error");
+                                    return reason;
+                                }).collect(Collectors.toList());
+                            }
+                            if (!CollectionUtils.isEmpty(errorReasons)) {
+                                errorReasonRepository.saveAll(errorReasons);
+                            }
+                            if (!CollectionUtils.isEmpty(failureResponse)) {
+                                fileName = fileName.substring(0,fileName.lastIndexOf("."));
+                                boolean fileCreated = emailService.generateStatusFile(failureResponse, DOWNLOAD_DIR + fileName + getTimestamp()+".csv");
+                                if (fileCreated) {
+                                    model.addAttribute("fileCreated", "Y");
+                                } else {
+                                    model.addAttribute("fileCreated", "N");
+                                }
+                            } else {
+                                model.addAttribute("fileCreated", "N");
+                            }
+                            model.addAttribute("successcount", successCount);
+                            model.addAttribute("failurecount", failureCount);
+                            model.addAttribute("totalcount", totalcount);
+                        } catch (Exception e) {
                         }
-                    }
-                    System.out.println("###########################################");
-                    System.out.println();
-                    model.addAttribute("successcount", successCount);
-                    model.addAttribute("failurecount", failureCount);
-                    model.addAttribute("totalcount", totalcount);
-                    if (!CollectionUtils.isEmpty(errorReasons)) {
-                        errorReasonRepository.saveAll(errorReasons);
-                    }
-                    if (!CollectionUtils.isEmpty(emailStatuses)) {
-                        boolean fileCreated = emailService.generateStatusFile(emailStatuses, DOWNLOAD_DIR+fileName);
-                        if (fileCreated) {
-                            model.addAttribute("fileCreated", "Y");
-                        } else {
-                            model.addAttribute("fileCreated", "N");
-                        }
-                    } else {
-                        model.addAttribute("fileCreated", "N");
                     }
                 } else {
                     throw new Exception("File Format Wrong");
@@ -138,7 +172,6 @@ public class SendMailController {
                 model.addAttribute("error", "File Format Wrong");
             }
         }
-
         return new ModelAndView("sendNewEmail");
     }
 }

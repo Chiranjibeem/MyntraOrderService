@@ -5,6 +5,7 @@ import com.example.mailexchange.MailExchange.exception.MailExchangeException;
 import com.example.mailexchange.MailExchange.model.Customer;
 import com.example.mailexchange.MailExchange.service.CustomerRegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,13 +19,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RegistrationController {
 
     public String registrationStatus = "";
-
     @Autowired
     EmailServiceImpl emailService;
-
-
     @Autowired
     CustomerRegistryService customerRegistryService;
+    @Value("${spring.mail.username}")
+    private String fromEmail;
 
     @GetMapping
     public String showRegistrationForm(Model model) {
@@ -47,7 +47,7 @@ public class RegistrationController {
                         "\n" + "\n" + "\n" +
                         "This is a system generated Email, Please don't reply";
                 try {
-                    emailService.sendEmailWithAttachment("",subject, message,customer.getEmail());
+                    emailService.sendEmailWithAttachment(fromEmail, "Admin", subject, message, customer.getEmail(), "Customer");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

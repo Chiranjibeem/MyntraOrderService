@@ -8,17 +8,12 @@ import com.opencsv.bean.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.mail.MailException;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.util.StringUtils;
 
-import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -49,7 +44,7 @@ public class EmailServiceImpl {
                 }
             }
             fileWriter = new FileWriter(file, false);
-            List<String[]> data = statuses.stream().map(i -> new String[]{i.getEmail(), i.getEmail(), i.getStatus()}).collect(Collectors.toList());
+            List<String[]> data = statuses.stream().map(i -> new String[]{i.getEmail(), i.getName(), i.getStatus()}).collect(Collectors.toList());
             writer = new CSVWriter(fileWriter, ',',
                     CSVWriter.NO_QUOTE_CHARACTER,
                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
@@ -92,19 +87,27 @@ public class EmailServiceImpl {
         return emailTemplatesList;
     }
 
-    public void sendEmailWithAttachment(String fromEmail, String personName, String subject, String message, String... toEmail) throws Exception {
+    public EmailStatus sendEmailWithAttachment(String fromEmail, String personName, String subject, String message, String toEmail, String toEmailName) {
+        try {
+            MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
 
-        MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
+            helper.setFrom(fromEmail, personName);
+            helper.setTo(toEmail);
+            helper.setSubject(subject);
+            helper.setText(message, true);
 
-        helper.setFrom(fromEmail, personName);
-        helper.setTo(toEmail);
-        helper.setSubject(subject);
-        helper.setText(message, true);
+            //ClassPathResource classPathResource = new ClassPathResource("Attachment.pdf");
+            //helper.addAttachment(classPathResource.getFilename(), classPathResource);
 
-        //ClassPathResource classPathResource = new ClassPathResource("Attachment.pdf");
-        //helper.addAttachment(classPathResource.getFilename(), classPathResource);
-
-        javaMailSender.send(mimeMessage);
+            javaMailSender.send(mimeMessage);
+            EmailStatus emailStatus = new EmailStatus(toEmail, toEmailName, "SUCCESS");
+            System.out.println("Email Sent Success => "+toEmail);
+            return emailStatus;
+        } catch (Exception e) {
+            System.out.println("Email Sent Failed  => "+toEmail);
+            EmailStatus emailStatus = new EmailStatus(toEmail, toEmailName, e.getMessage().substring(0,200));
+            return emailStatus;
+        }
     }
 }

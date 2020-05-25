@@ -3,16 +3,22 @@ package com.example.mailexchange.MailExchange.model;
 import java.util.HashMap;
 
 public class EmailStatus {
+    public static HashMap<String, String> hashMap = new HashMap<>();
+
+    static {
+        hashMap.put("email", "email");
+        hashMap.put("name", "name");
+        hashMap.put("status", "status");
+    }
+
     private String email;
     private String name;
     private String status;
 
-    public static HashMap<String,String> hashMap= new HashMap<>();
-
-    static {
-        hashMap.put("email", "email");
-        hashMap.put("name","name");
-        hashMap.put("status", "status");
+    public EmailStatus(String email, String name, String status) {
+        this.email = email;
+        this.name = name;
+        this.status = status;
     }
 
     public String getEmail() {
