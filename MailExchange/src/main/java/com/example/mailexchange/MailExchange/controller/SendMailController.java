@@ -2,11 +2,9 @@ package com.example.mailexchange.MailExchange.controller;
 
 import com.example.mailexchange.MailExchange.configure.EmailServiceImpl;
 import com.example.mailexchange.MailExchange.configure.EmailTaskExecutor;
-import com.example.mailexchange.MailExchange.model.EmailStatus;
-import com.example.mailexchange.MailExchange.model.EmailTemplate;
-import com.example.mailexchange.MailExchange.model.ErrorReason;
-import com.example.mailexchange.MailExchange.model.SendNewEmail;
+import com.example.mailexchange.MailExchange.model.*;
 import com.example.mailexchange.MailExchange.repository.ErrorReasonRepository;
+import com.example.mailexchange.MailExchange.repository.SequenceTestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -52,6 +50,9 @@ public class SendMailController {
 
     @Autowired
     private ExecutorService executorService;
+
+    @Autowired
+    private SequenceTestRepository sequenceTestRepository;
 
     @RequestMapping("/sendMailList")
     public ModelAndView sendMailList(Model model) {
@@ -172,6 +173,12 @@ public class SendMailController {
                 model.addAttribute("error", "File Format Wrong");
             }
         }
+
+        //need to remove
+        SequenceTest sequenceTest = new SequenceTest();
+        sequenceTest.setSequenceName("NAME");
+        sequenceTestRepository.save(sequenceTest);
+
         return new ModelAndView("sendNewEmail");
     }
 }

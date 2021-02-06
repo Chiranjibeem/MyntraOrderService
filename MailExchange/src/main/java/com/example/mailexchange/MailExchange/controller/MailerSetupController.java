@@ -13,6 +13,10 @@ public class MailerSetupController {
         return new ModelAndView("/mailerList");
     }
 
+    String constan = "select deptid,count(employee) from employee " +
+            "having sal > 1000 group by deptid";
+
+
     @RequestMapping("/addMailer")
     public ModelAndView addMailer(){
         return new ModelAndView("addMailer");

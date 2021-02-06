@@ -13,12 +13,16 @@ import java.util.Properties;
 
 public class SendEmail {
 
+   /*address	https://my.contabo.com
+   user name	wizardmighty3@gmail.com
+   password	VdiH7r8Fb4cx
+*/
    // for example, smtp.mailgun.org
-   private static final String SMTP_SERVER = "new.serviceintl.xyz";
-   private static final String USERNAME = "server@serviceintl.xyz";
-   private static final String PASSWORD = "Open@9692";
+   private static final String SMTP_SERVER = "s219869.cloud.flynet.pro";
+   private static final String USERNAME = "admin@s219869.cloud.flynet.pro";
+   private static final String PASSWORD = "5X7hwENh";
 
-   private static final String EMAIL_FROM = "server@serviceintl.xyz";
+   private static final String EMAIL_FROM = "admin@s219869.cloud.flynet.pro";
    private static final String EMAIL_TO = "chintu.mit@gmail.com";
    private static final String EMAIL_TO_CC = "chiranjibeem@gmail.com";
 

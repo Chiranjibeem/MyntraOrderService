@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -48,7 +49,8 @@ public class Covid19Controller {
 
     public static HashMap<String, String> stateCode = new HashMap<>();
 
-    static {
+    @PostConstruct
+    public void initializeStateMap(){
         stateCode.put("AN", "Andaman and Nicobar Islands");
         stateCode.put("AP", "Andhra Pradesh");
         stateCode.put("AD", "Andhra Pradesh");
@@ -165,7 +167,7 @@ public class Covid19Controller {
 
             inetAddress = InetAddress.getLocalHost();
 
-            TrackUser trackUser = new TrackUser();
+            TrackUser trackUser = new TrackUser();Lis
             trackUser.setUserHost(inetAddress.getHostName());
             trackUser.setIpAddress(String.valueOf(inetAddress.getAddress()));
             trackUser.setAccessURL("/stateDashboard");
