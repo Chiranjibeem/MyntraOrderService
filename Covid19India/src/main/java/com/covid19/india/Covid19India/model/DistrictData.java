@@ -1,5 +1,7 @@
 package com.covid19.india.Covid19India.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class DistrictData
 {
     public String district;
@@ -15,6 +17,8 @@ public class DistrictData
     public String deceased;
 
     public String recovered;
+
+    public String migratedother;
 
     public String getDistrict() {
         return district;
@@ -70,6 +74,14 @@ public class DistrictData
 
     public void setRecovered(String recovered) {
         this.recovered = recovered;
+    }
+
+    public String getMigratedother() {
+        return migratedother;
+    }
+
+    public void setMigratedother(String migratedother) {
+        this.migratedother = migratedother;
     }
 }
 			

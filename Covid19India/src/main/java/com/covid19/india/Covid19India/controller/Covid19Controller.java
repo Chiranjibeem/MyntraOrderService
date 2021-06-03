@@ -167,7 +167,7 @@ public class Covid19Controller {
 
             inetAddress = InetAddress.getLocalHost();
 
-            TrackUser trackUser = new TrackUser();Lis
+            TrackUser trackUser = new TrackUser();
             trackUser.setUserHost(inetAddress.getHostName());
             trackUser.setIpAddress(String.valueOf(inetAddress.getAddress()));
             trackUser.setAccessURL("/stateDashboard");
